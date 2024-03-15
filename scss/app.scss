@@ -1,20 +1,20 @@
 /**
 * Foundation
 * ========================== */
-@import "foundation/_ress";
-@import "foundation/_variables";
-@import "foundation/_function";
-@import "foundation/_mixin";
-@import "foundation/_base";
+@use "foundation/_ress";
+@use "foundation/_variables";
+@use "foundation/_function";
+@use "foundation/_mixin";
+@use "foundation/_base";
 /**
 * Layout
 * ========================== */
-@import "layout/*";
+@use "layout/*";
 /* Object
 * ========================== */
 /* Component ------------ */
-@import "object/component/*";
+@use "object/component/*";
 /* Project ------------ */
-@import "object/project/*";
+@use "object/project/*";
 /* Utility ------------ */
-@import "object/utility/*";
+@use "object/utility/*";
