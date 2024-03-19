@@ -3,7 +3,7 @@ html {
 }
 
 .l-body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, "M PLUS 1p";
 }
 
 .l-header {
@@ -16,31 +16,54 @@ html {
   color: #707070;
   font-size: 40px;
   font-weight: 700;
-  text-align: center;
+  margin: 0px auto 40px auto;
 }
 
-.c-button {
+.c-button__menu {
   font-family: Roboto;
   color: #707070;
   font-size: 20px;
   font-weight: 700;
   width: 51px;
   height: 23px;
-  margin: 8px 8px;
+  margin: 8px 8px 0px auto;
 }
 
 .c-inner {
-  margin: 0 auto;
-  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .c-search {
   width: 216px;
   height: 46px;
-  top: 130px;
-  left: 27px;
+  margin: 0px auto 39px auto;
+  display: flex;
+}
+.c-search__area {
   border-radius: 10px 8px 10px 10px;
-  opacity: 0px;
-  background-color: white;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.c-search__area::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../image/search.png) no-repeat center center/auto 100%;
+  display: inline-block;
+  position: absolute;
+  margin: 12px auto 10px 9px;
+}
+.c-search__button {
+  width: 90px;
+  height: 46px;
+  margin-left: 16px;
+  background-color: linear-gradient(90deg, #F2EDE9 100%, #DED8D3 100%);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #707070;
+  font-family: "M PLUS 1p";
+  font-size: 16px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
