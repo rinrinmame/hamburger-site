@@ -1,0 +1,39 @@
+@forward "./foundation/base"; as
+@forward "./foundation/mixin"; as
+
+.l-main {
+
+    &__visual {
+    position: relative;
+    }
+
+    &__title {
+        width: 216px;
+        height: 53px;
+        position: absolute;
+        color: #FFFFFF;
+        margin: 122px auto 110px 25px;
+
+        @include breakpoint(tablet) {
+            margin: 122px auto 110px 86px;
+        }
+
+        @include breakpoint(pc) {
+            width: 240px;
+            height: 59px;
+            margin: 234px auto 237px 86px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__contents {
+        display: grid;
+        gap: 80px;
+        grid-template-columns: repeat(2 1fr);
+        margin-top: 6%;
+        margin-bottom: 130px;
+    }
+}

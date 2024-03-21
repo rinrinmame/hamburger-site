@@ -19,6 +19,25 @@ html {
   margin: 0px auto 40px auto;
 }
 
+.l-main__visual {
+  position: relative;
+}
+.l-main__title {
+  position: absolute;
+  color: #FFFFFF;
+  margin: 122px auto 110px 25px;
+}
+.l-main__img {
+  width: 100%;
+}
+.l-main__contents {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(2 1fr);
+  margin-top: 6%;
+  margin-bottom: 130px;
+}
+
 .c-button__menu {
   font-family: Roboto;
   color: #707070;
