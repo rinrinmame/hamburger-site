@@ -9,112 +9,102 @@
     <link rel="stylesheet" href="./css/ress.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
-
 </head>
 <body class="l-body">
     <header class="l-header">
-        <div class="c-inner">
-            <button class="l-header__nav c-button__menu">Menu</button>
+        <div class="c-inner">            
             <h1 class="l-header__title">Hamburger</h1>
-            <form class="l-header__saerch c-search" action="サイトURL" method="get">
-                <input class=c-search__area type="text" name="search">
-                <input class=c-search__button type="submit" value="検索">
+            <form class="c-search-form" action="サイトURL" method="get">
+                <input class="c-search-form__keyword" type="text" name="search">
+                <input class="c-search-form_submit" type="submit" value="検索">
             </form>
         </div>
     </header>
     <main class="l-main">
         <div class="c-inner">
-            <div class="l-main__visual">
-                <h2 class="l-main__title">ダミーサイト</h2>
-                <img src="./image/main__image.jpg" alt="ハンバーガーの写真">                                
-            </div>
-            <article class="l-main__contents p-theme">
-                <section class="p-theme__takeout c-section">
+            <article class="l-main__contents">                         
+                <div class="p-branch-menu">
                     <div class="c-inner">
-                        <img src="./image/three-burgers.jpg" alt="3つのハンバーガーの写真">
-                        <h3 class="p-theme__takeout--title c-section__title">
-                            <p>Take Out</p>
-                        </h3>
-                        <span class="p-theme__takeout--1 c-section__sub">
-                            <p>Take OUT</p>
-                            <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</p>
-                        </span>
-                        <span class="p-theme__takeout--2 c-section__sub">
-                            <P>Take OUT</P>
-                            <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</p>
-                        </span>
+                        <ul>
+                            <li><h2 class="p-branch-menu__title">ダミーサイト</h2></li>
+                            <li class="p-branch-menu__takeout">
+                                <div class="c-inner">
+                                    <h3>Take Out</h3>
+                                    <dl>             
+                                        <dt>Take OUT</dt>
+                                        <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>                                        
+                                        <dt>Take OUT</dt>
+                                        <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="p-branch-menu__eatin">
+                                <div class="c-inner">                                    
+                                    <h3>Eat In</h3>                                                                        
+                                    <dl>
+                                        <dt>Eat In</dt>
+                                        <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                        <dt>Eat In</dt>
+                                        <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </section>              
-                <section class="p-theme__eatin c-section">
-                    <div class="c-inner">
-                        <img src="./image/cheeseburger.jpg" alt="チーズバーガーの写真">
-                        <h3 class="p-theme__eatin--title c-section__title">
-                            <p>Eat In</p>
-                        </h3>
-                        <span class="p-theme__eatin--1 c-section__sub">
-                            <p>Eat In</p>
-                            <p>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
-                        </span>
-                        <span class="p-theme__eatin--2 c-section__sub">
-                            <p>Eat In</p>
-                            <p>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
-                        </span> 
-                    </div>
-                </section>
+                </div>
             </article>
-            //<aside class="l-sidebar">
-                //<div class="c-inner">
-                    //<nav class="l-sidebar__nav p-contact">
-                        //<ul class="p-contact__burger">
-                            //<li class="p-contact__burge--item"><a>バーガー</a></li>              
-                            //<li class="p-contact__burge--item"><a>ハンバーガー</a></li>
-                            //<li class="p-contact__burge--item"><a>チーズバーガー</a></li>
-                            //<li class="p-contact__burge--item"><a>テリヤキバーガー</a></li>
-                            //<li class="p-contact__burge--item"><a>アボカドバーガー</a></li>
-                            //<li class="p-contact__burge--item"><a>フィッシュバーガー</a></li>
-                            //<li class="p-contact__burge--item"><a>ベーコンバーガー</a></li>
-                            //<li class="p-contact__burge--item"><a>チキンバーガー</a></li>
-                        //</ul>
-                        //<ul class="p-contact__side">
-                            //<li class="p-contact__side--item"><a>サイド</a></li>
-                            //<li class="p-contact__side--item"><a>ポテト</a></li>
-                            //<li class="p-contact__side--item"><a>サラダ</a></li>
-                            //<li class="p-contact__side--item"><a>ナゲット</a></li>
-                            //<li class="p-contact__side--item"><a>コーン</a></li>
-                        //</ul>
-                        //<ul class="p-contact__drink">
-                            //<li class="p-contact__drink--item"><a>ドリンク</a></li>
-                            //<li class="p-contact__drink--item"><a>コーラ</a></li>
-                            //<li class="p-contact__drink--item"><a>ファンタ</a></li>
-                            //<li class="p-contact__drink--item"><a>オレンジ</a></li>
-                            //<li class="p-contact__drink--item"><a>アップル</a></li>
-                            //<li class="p-contact__drink--item"><a>紅茶（Ice/Hot）</a></li>
-                            //<li class="p-contact__drink--item"><a>コーヒー（Ice/Hot）</a></li>
-                        //</ul>
-                    //</nav>
-                //</div>
-            //</aside>
+            <section class="p-access">
+                <div class="c-inner">
+                    <h2 class="p-access__comment">見出しが入ります</h2>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="p-access__map">
+                    </div>
+                </div>
+            </section>
+            <aside class="l-sidebar">
+                <div class="c-inner">
+                    <h2 class="c-button__menu">
+                        <button>Menu</button>
+                    </h2> 
+                    <nav class="l-sidebar__nav p-contact">                        
+                        <ul class="p-contact__burger">
+                            <li class="p-contact__burge--item"><h3>バーガー</h3></li>
+                            <li class="p-contact__burge--item"><a>ハンバーガー</a></li>
+                            <li class="p-contact__burge--item"><a>チーズバーガー</a></li>
+                            <li class="p-contact__burge--item"><a>テリヤキバーガー</a></li>
+                            <li class="p-contact__burge--item"><a>アボカドバーガー</a></li>
+                            <li class="p-contact__burge--item"><a>フィッシュバーガー</a></li>
+                            <li class="p-contact__burge--item"><a>ベーコンバーガー</a></li>
+                            <li class="p-contact__burge--item"><a>チキンバーガー</a></li>
+                        </ul>                        
+                        <ul class="p-contact__side">
+                            <li class="p-contact__side--item"><h3>サイド</h3></li>
+                            <li class="p-contact__side--item"><a>ポテト</a></li>
+                            <li class="p-contact__side--item"><a>サラダ</a></li>
+                            <li class="p-contact__side--item"><a>ナゲット</a></li>
+                            <li class="p-contact__side--item"><a>コーン</a></li>
+                        </ul>
+                        
+                        <ul class="p-contact__drink">
+                            <li class="p-contact__drink--item"><h3>ドリンク</h3></li>
+                            <li class="p-contact__drink--item"><a>コーラ</a></li>
+                            <li class="p-contact__drink--item"><a>ファンタ</a></li>
+                            <li class="p-contact__drink--item"><a>オレンジ</a></li>
+                            <li class="p-contact__drink--item"><a>アップル</a></li>
+                            <li class="p-contact__drink--item"><a>紅茶（Ice/Hot）</a></li>
+                            <li class="p-contact__drink--item"><a>コーヒー（Ice/Hot）</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </main>
     <footer class="l-footer">
         <div class="c-inner">
-            <div class="1-footer__contents p-article">
-                <div class="p-article__map">
-                    <img src="./image/map.jpg" alt="店舗の地図">
-                    <div class="p-article__comments">
-                        <div class="c-inner">
-                            <h4 class="p-article__comment">
-                                <p>見出しが入ります</p>
-                            </h4>
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="l-footer__nav p-nav">
-                <a>ショップ情報｜ヒストリー</a>
-                <p class="c-copyright">Copyright:RaiseTech</p>
-            </div>
+            <ul class="l-footer__menu">
+                <li><a>ショップ情報｜ヒストリー</a></li>
+                <li><small>Copyright:RaiseTech</small></li>
+            </ul>
         </div>
     </footer>
 </body>
