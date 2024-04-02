@@ -1,4 +1,21 @@
 .l-footer {
     grid-row: 3;
     grid-column: 1/3;
+    background-color: #9D8670;
+
+    &__menu {
+        list-style: none;
+        height: 30px;
+        color: #FFFFFF;
+        font-family: "M PLUS 1p";
+        font-weight: regular;
+        font-size: 2rem;
+        margin: 41px auto 31px auto;
+        text-align: center;
+
+        small {
+            height: 21px;
+            font-size: 1.4rem;
+        }
+    }
 }

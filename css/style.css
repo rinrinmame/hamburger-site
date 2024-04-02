@@ -1,11 +1,17 @@
 html {
-  font-size: 100%;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
 }
 
 .l-body {
   font-family: "Roboto", sans-serif, "M PLUS 1p";
   grid-template-rows: 217px 1fr 150px;
-  grid-template-columns: 1fr 21%;
+  grid-template-columns: 1fr 19%;
 }
 
 .l-header {
@@ -13,6 +19,7 @@ html {
   grid-column: 1;
   background: #FFF7EF;
   width: 100%;
+  z-index: 100;
 }
 .l-header__nav {
   display: flex;
@@ -20,8 +27,8 @@ html {
 .l-header__title {
   font-family: "Roboto";
   color: #707070;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 6.4rem;
+  font-weight: bold;
   height: 84px;
   width: 325px;
   margin: 66px auto 67px 65px;
@@ -71,16 +78,29 @@ html {
 .l-footer {
   grid-row: 3;
   grid-column: 1/3;
+  background-color: #9D8670;
+}
+.l-footer__menu {
+  list-style: none;
+  height: 30px;
+  color: #FFFFFF;
+  font-family: "M PLUS 1p";
+  font-weight: regular;
+  font-size: 2rem;
+  margin: 41px auto 31px auto;
+  text-align: center;
+}
+.l-footer__menu small {
+  height: 21px;
+  font-size: 1.4rem;
 }
 
-.c-button__menu button {
+.c-button__menu {
   font-family: Roboto;
   color: #707070;
-  font-size: 20px;
-  font-weight: 700;
-  width: 51px;
-  height: 23px;
-  margin: 8px 8px 0px auto;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 84px auto 90px 46px;
 }
 
 .c-inner {
@@ -89,24 +109,28 @@ html {
   width: 100%;
 }
 
-.c-search-form__keyword {
-  width: 396px;
-  height: 46px;
-  border-radius: 10px 8px 10px 10px;
-  background-color: #FFFFFF;
+.c-search-form {
   display: inline-block;
   position: relative;
-  border: 1px solid #707070;
 }
-.c-search-form__keyword::before {
+.c-search-form::before {
   content: "";
   width: 24px;
   height: 24px;
   background: url(../../../images/header__search-form.png) no-repeat center center;
   display: inline-block;
   position: absolute;
-  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 12px;
+}
+.c-search-form__keyword {
+  width: 396px;
+  height: 46px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+  padding: 11px 36px 11px 12px;
 }
 .c-search-form__submit {
   width: 136px;
@@ -116,17 +140,35 @@ html {
   border-radius: 10px 10px 10px 10px;
   border: 1px solid #707070;
   font-family: "M PLUS 1p";
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #707070;
 }
 
+.c-sub {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  font-size: 2.4rem;
+  height: 36px;
+}
+
+.c-item {
+  font-family: "M PLUS 1p";
+  font-weight: regular;
+  font-size: 2rem;
+  height: 30px;
+}
+
 .p-branch-menu__title {
-  font-size: "M PLUS 1p";
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  font-size: 4rem;
   color: #FFFFFF;
   background-image: url(../../../images/main__title.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100vh;
-  width: 1553px;
+  width: 100%;
 }
 
 .p-contact {

@@ -3,6 +3,7 @@
     grid-column: 1;
     background: #FFF7EF;
     width: 100%;
+    z-index: 100;
 
     &__nav {
         display: flex;
@@ -11,8 +12,8 @@
     &__title {
         font-family: "Roboto";
         color: #707070;
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 6.4rem;
+        font-weight: bold;
         height: 84px;
         width: 325px;
         margin: 66px auto 67px 65px;

@@ -1,9 +1,16 @@
 html {
-    font-size: 100%;
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+
 }
 
 .l-body {
     font-family: "Roboto", sans-serif,"M PLUS 1p";
     grid-template-rows: 217px 1fr 150px;
-    grid-template-columns: 1fr 21%;
+    grid-template-columns: 1fr 19%;
 }
