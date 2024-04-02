@@ -1,15 +1,4 @@
 .c-search-form {
-    width: 546px;
-    height: 46px;
-    margin: 86px 31px 586px ;
-
-    &::before {
-        content: "";
-        background: url(../image/header__search-form.png) no-repeat center center / auto 100%;
-        display: inline-block;
-        position: absolute;
-        margin: 12px auto 10px 9px;
-    }
     
     &__keyword {
         width: 396px;
@@ -19,7 +8,17 @@
         display: inline-block;
         position: relative;
         border:  1px solid #707070;
-        padding: 11px auto 11px 12px;
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: url(../../../images/header__search-form.png) no-repeat center center;
+            display: inline-block;
+            position: absolute;
+            top: 11px;
+            left: 12px;
+        }
     }
 
     &__submit {
