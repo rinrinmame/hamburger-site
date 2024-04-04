@@ -1,13 +1,19 @@
 .p-branch-menu {
 
     &__title {
-        font-family: "M PLUS 1p";
-        font-weight: bold;
-        font-size: 4rem;
-        color: #FFFFFF;
+        position: relative;
+        height: 747px;
+        overflow: hidden;
         background-image: url(../../../images/main__title.jpg);
-        object-fit: cover;
-        height: 100vh;
-        width: 100%;
+        background-size: cover;
+
+        h2 {
+            font-family: "M PLUS 1p";
+            font-weight: bold;
+            font-size: 4rem;
+            color: #FFFFFF;
+            height: 59px;
+            margin: 385px auto 237px 86px;
+        }
     }
 }
