@@ -1,5 +1,6 @@
 @use "../foundation/base" as *;
-@use "../foundation/mixin" as *;
+@use "../foundation/breakpoint" as *;
+@use "../foundation/color" as *;
 
 .l-main {
     grid-row: 2;

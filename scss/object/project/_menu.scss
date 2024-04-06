@@ -1,0 +1,7 @@
+@use "../../foundation/color" as *;
+
+.p-menu {
+    color: $color--gray;
+    font-weight: bold;
+    line-height: normal;
+}

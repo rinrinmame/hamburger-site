@@ -1,11 +1,11 @@
 @use "../../foundation/color" as *;
 
-.c-item {
+.c-title {
     list-style-type: none;
     font-family: "M PLUS 1p";
-    font-weight: regular;
-    font-size: 2rem;
+    font-weight: bold;
+    font-size: 2.4rem;
     color: $color--gray;
-    height: 30px;
-    margin: 0px auto 20px 66px;
+    height: 36px;
+    margin: 48px auto 32px 46px;
 }

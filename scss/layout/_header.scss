@@ -1,7 +1,9 @@
+@use "../foundation/color" as *;
+
 .l-header {
     grid-row: 1;
     grid-column: 1;
-    background: #FFF7EF;
+    background-color: $color--ivory;
 
     &__nav {
         display: flex;
@@ -9,7 +11,7 @@
 
     &__title {
         font-family: "Roboto";
-        color: #707070;
+        color: $color--gray;
         font-size: 6.4rem;
         font-weight: bold;
         height: 84px;

@@ -1,5 +1,7 @@
+@use "../../foundation/color" as *;
+
 .c-background {
-    background-color: #FFFFFF;
+    background-color: $color--white;
     
     
     &__takeout {

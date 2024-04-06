@@ -1,3 +1,5 @@
+@use "../../foundation/color" as *;
+
 .p-branch-menu {
 
     &__title {
@@ -11,7 +13,7 @@
             font-family: "M PLUS 1p";
             font-weight: bold;
             font-size: 4rem;
-            color: #FFFFFF;
+            color: $color--white;
             height: 59px;
             margin: 385px auto 237px 86px;
         }

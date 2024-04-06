@@ -11,17 +11,14 @@ img {
 .l-body {
   height: 100vh;
   width: 100%;
-  display: grid;
   font-family: "Roboto", sans-serif, "M PLUS 1p";
-  grid-template-rows: 217px 1fr 150px;
-  grid-template-columns: 1fr 19%;
   box-sizing: border-box;
 }
 
 .l-header {
   grid-row: 1;
   grid-column: 1;
-  background: #FFF7EF;
+  background-color: #FFF7EF;
 }
 .l-header__nav {
   display: flex;
@@ -73,7 +70,7 @@ img {
   color: #707070;
   font-size: 4rem;
   font-weight: bold;
-  margin: 84px auto 90px 46px;
+  margin: 84px auto 42px 46px;
 }
 
 .c-inner {
@@ -126,10 +123,13 @@ img {
 }
 
 .c-item {
+  list-style-type: none;
   font-family: "M PLUS 1p";
   font-weight: regular;
   font-size: 2rem;
+  color: #707070;
   height: 30px;
+  margin: 0px auto 20px 66px;
 }
 
 .c-background {
@@ -140,6 +140,22 @@ img {
 }
 .c-background__takeout {
   background: url(../../../images/main__eatin.jpg) no-repeat center center;
+}
+
+.c-grid {
+  display: grid;
+  grid-template-rows: 217px 1fr 150px;
+  grid-template-columns: 1fr 19%;
+}
+
+.c-title {
+  list-style-type: none;
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #707070;
+  height: 36px;
+  margin: 48px auto 32px 46px;
 }
 
 .p-branch-menu__title {
@@ -158,7 +174,7 @@ img {
   margin: 385px auto 237px 86px;
 }
 
-.p-contact {
+.p-menu {
   color: #707070;
   font-weight: bold;
   line-height: normal;

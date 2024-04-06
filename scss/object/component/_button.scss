@@ -1,10 +1,12 @@
+@use "../../foundation/color" as *;
+
 .c-button {
 
     &__menu {
         font-family: Roboto;
-        color: #707070;
+        color: $color--gray;
         font-size: 4rem;
         font-weight: bold;
-        margin: 84px auto 90px 46px;
+        margin: 84px auto 42px 46px;
     }
 }
