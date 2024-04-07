@@ -6,35 +6,35 @@
 
     &::before {
         content: "";
-        width: 24px;
-        height: 24px;
+        width: 2.4rem;
+        height: 2.4rem;
         background: url(../../../images/header__search-form.png) no-repeat center center;
         display: inline-block;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 12px;
+        left: 1.2rem;
     }
     
     &__keyword {
-        width: 396px;
-        height: 46px;
+        width: 39.6rem;
+        height: 4.6rem;
         border-radius: 10px 10px 10px 10px;
         background-color: $color--white;   
         border: 1px solid $color--gray;
-        padding: 11px 36px 11px 12px;
+        padding: 1.1rem 3.6rem 1.1rem 1.2rem;
     }
 
     &__submit {
-        width: 136px;
-        height: 46px;
-        margin: 86px 31px 85px 14px;
+        width: 13.6rem;
+        height: 4.6rem;
+        margin: 8.6rem 3.1rem 8.5rem 1.4rem;
         background-color: $color--offWhite;
         border-radius: 10px 10px 10px 10px;
         border: 1px solid $color--gray;
         font-family: "M PLUS 1p";
         font-size: 1.6rem;
-        font-weight: 700;
+        font-weight: bold;
         color: $color--gray;
     }
 }

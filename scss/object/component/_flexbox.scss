@@ -1,0 +1,9 @@
+.c-flexbox {
+    display: flex;
+    
+    &__branch-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+    }
+}
