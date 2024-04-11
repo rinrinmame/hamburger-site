@@ -1,0 +1,29 @@
+@use "../../foundation/color" as *;
+
+.p-access {
+    display: inline-block;
+    font-family: "M PLUS 1p";
+    font-weight: bold;
+    height: auto;
+
+    &__comment {
+
+        h2 {
+            height: auto;
+            width: auto;
+            position: relative;
+            color: $color--white;
+            font-size: 3.6rem;
+            margin-bottom: 10.9rem;      
+        }
+
+        p {
+            height: auto;
+            width: auto;
+            position: relative;
+            color: $color--white;
+            font-size: 1.6rem;
+            line-height: 2;
+        }
+    }
+}

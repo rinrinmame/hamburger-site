@@ -2,8 +2,10 @@
 
 .p-branch-menu {
 
-    &__takeout {       
+    &__takeout {  
         background-image: url(../../../images/main__takeout.jpg);
+        background-size: contain;
+
 
         h3 {
             margin-top: 2.4rem;
@@ -13,6 +15,7 @@
 
     &__eatin {        
         background-image: url(../../../images/main__eatin.jpg);
+        background-size: contain;
 
         h3 {
             margin-top: 2.8rem;

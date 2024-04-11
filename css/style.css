@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -72,7 +76,7 @@ li {
   font-family: "M PLUS 1p";
   font-weight: regular;
   font-size: 2rem;
-  margin: 4.1remx auto 3.1rem auto;
+  margin: 4.1rem auto 3.1rem auto;
   text-align: center;
 }
 .l-footer__menu small {
@@ -93,7 +97,12 @@ li {
 }
 .c-inner__category {
   padding: 0 3.4% 0 3.4%;
-  margin-bottom: 2.1rem;
+}
+.c-inner__list {
+  padding: 1.4rem 2rem 1.4rem 2rem;
+}
+.c-inner__text {
+  padding: 8.6rem 13.4rem 6.7rem 11.9rem;
 }
 
 .c-search-form {
@@ -145,43 +154,57 @@ li {
   font-size: 2rem;
   color: #707070;
   height: 3rem;
-  margin: 0px auto 2rem 6.6rem;
+  margin: 0px 6.6rem 2rem 6.6rem;
 }
 
 .c-background {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  display: inline-block;
 }
 .c-background__branch-menu {
-  display: inline-block;
   background-color: #FFFFFF;
 }
 .c-background__title {
-  height: 53rem;
+  height: auto;
   width: 100%;
   overflow: hidden;
-  box-sizing: border-box;
   background-size: cover;
   background-image: url(../../../images/main__title.jpg);
+}
+.c-background__category {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  background-size: cover;
+  background: rgba(255, 255, 255, 0.79);
+  margin-bottom: 3.2%;
 }
 .c-background__access {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  box-sizing: border-box;
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
   background-image: url(../../../images/main__map.jpg);
 }
-.c-background__category {
-  height: 16.6rem;
-  width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
+.c-background__map {
+  height: auto;
+  width: auto;
+  position: relative;
+  overflow: hidden;
   background-size: cover;
-  background-color: #FFFFFF;
-  opacity: 79.79%;
-  padding: 2.39% 3.4% 3.4% 3.4%;
-  margin-bottom: 3.2%;
+  background-position: bottom;
+  background: rgba(0, 0, 0, 0.5);
+}
+.c-background__text {
+  height: auto;
+  width: 61%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: bottom;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .c-grid {
@@ -189,7 +212,7 @@ li {
   width: 100%;
   display: grid;
   grid-template-rows: 217px 1fr 150px;
-  grid-template-columns: 1fr 19.1%;
+  grid-template-columns: 1fr 20%;
 }
 
 .c-title {
@@ -202,14 +225,14 @@ li {
 }
 
 .c-category {
-  height: 100vh;
-  width: 50%;
+  height: auto;
+  width: 100%;
   display: inline-block;
-  box-sizing: border-box;
   font-family: "M PLUS 1p";
   color: #3C2A10;
   background-color: #FFFFFF;
   background-size: cover;
+  position: relative;
 }
 .c-category h3 {
   font-family: Roboto;
@@ -219,7 +242,8 @@ li {
   width: auto;
   color: #EAEAEA;
   display: inline-block;
-  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 58%;
 }
 .c-category dt {
   font-weight: bold;
@@ -228,16 +252,16 @@ li {
   width: auto;
   margin-bottom: 1.4rem;
   display: inline-block;
-  box-sizing: border-box;
+  position: relative;
 }
 .c-category dd {
   font-weight: regular;
   font-size: 1.6rem;
   height: auto;
   width: auto;
-  margin: auto 3.67% 2.57% 3.67%;
+  line-height: 1.7;
   display: inline-block;
-  box-sizing: border-box;
+  position: relative;
 }
 
 .c-flexbox {
@@ -249,8 +273,37 @@ li {
   gap: 80px;
 }
 
+.c-list {
+  display: inline-block;
+}
+
+.p-access {
+  display: inline-block;
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  height: auto;
+}
+.p-access__comment h2 {
+  height: auto;
+  width: auto;
+  position: relative;
+  color: #FFFFFF;
+  font-size: 3.6rem;
+  margin-bottom: 10.9rem;
+}
+.p-access__comment p {
+  height: auto;
+  width: auto;
+  position: relative;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
 .p-branch-menu__takeout {
   background-image: url(../../../images/main__takeout.jpg);
+  background-size: contain;
+  background-position: right;
 }
 .p-branch-menu__takeout h3 {
   margin-top: 2.4rem;
@@ -258,6 +311,8 @@ li {
 }
 .p-branch-menu__eatin {
   background-image: url(../../../images/main__eatin.jpg);
+  background-size: contain;
+  background-position: left;
 }
 .p-branch-menu__eatin h3 {
   margin-top: 2.8rem;

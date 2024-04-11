@@ -2,6 +2,10 @@ html {
     font-size: 62.5%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -10,7 +14,7 @@ img {
 
 li {
     list-style-type: none;
- }
+}
 
 .l-body {
     height: 100vh;
