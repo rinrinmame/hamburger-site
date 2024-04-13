@@ -11,7 +11,7 @@
 
     &__title {
         height: auto;
-        width: 100%;
+        width: auto;
         overflow: hidden;
         background-size: cover;
         background-image: url(../../../images/main__title.jpg);
@@ -27,8 +27,9 @@
     }
 
     &__access {
-        height: 100vh;
+        height: 100%;
         width: 100%;
+        position: relative;
         overflow: hidden;
         background-size: contain;
         background-position: bottom;
@@ -40,7 +41,7 @@
         width: auto;
         position: relative;
         overflow: hidden;
-        background-size: cover;
+        background-size: contain;
         background-position: bottom;
         background: rgba($color: $color--clearblack, $alpha: 0.5);
     }

@@ -167,7 +167,7 @@ li {
 }
 .c-background__title {
   height: auto;
-  width: 100%;
+  width: auto;
   overflow: hidden;
   background-size: cover;
   background-image: url(../../../images/main__title.jpg);
@@ -181,8 +181,9 @@ li {
   margin-bottom: 3.2%;
 }
 .c-background__access {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  position: relative;
   overflow: hidden;
   background-size: contain;
   background-position: bottom;
@@ -193,7 +194,7 @@ li {
   width: auto;
   position: relative;
   overflow: hidden;
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -303,7 +304,6 @@ li {
 .p-branch-menu__takeout {
   background-image: url(../../../images/main__takeout.jpg);
   background-size: contain;
-  background-position: right;
 }
 .p-branch-menu__takeout h3 {
   margin-top: 2.4rem;
@@ -312,7 +312,6 @@ li {
 .p-branch-menu__eatin {
   background-image: url(../../../images/main__eatin.jpg);
   background-size: contain;
-  background-position: left;
 }
 .p-branch-menu__eatin h3 {
   margin-top: 2.8rem;
