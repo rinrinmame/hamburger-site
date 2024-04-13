@@ -1,27 +1,25 @@
 @use "../../foundation/color" as *;
 
 .c-background {
-    height: 100%;
-    width: 100%;
-    display: inline-block;
 
     &__branch-menu {
         background-color: $color--white;
     }
 
     &__title {
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
+        position: relative;
         overflow: hidden;
-        background-size: cover;
+        object-fit: cover;
         background-image: url(../../../images/main__title.jpg);
     }
 
     &__category {
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
         overflow: hidden;
-        background-size: cover;
+        object-fit: cover;
         background: rgba($color: $color--white, $alpha: 0.79);
         margin-bottom: 3.2%;
     }
@@ -29,9 +27,10 @@
     &__access {
         height: 100%;
         width: 100%;
+        display: block;
         position: relative;
         overflow: hidden;
-        background-size: contain;
+        object-fit: cover;
         background-position: bottom;
         background-image: url(../../../images/main__map.jpg);
     }
@@ -39,9 +38,10 @@
     &__map {
         height: auto;
         width: auto;
+        display: block;
         position: relative;
         overflow: hidden;
-        background-size: contain;
+        object-fit: cover;
         background-position: bottom;
         background: rgba($color: $color--clearblack, $alpha: 0.5);
     }
@@ -49,9 +49,10 @@
     &__text {
         height: auto;
         width: 61%;
+        display: inline-block;
         position: relative;
         overflow: hidden;
-        background-size: cover;
+        object-fit: cover;
         background-position: bottom;
         background: rgba($color: $color--clearblack, $alpha: 0.2);
     }

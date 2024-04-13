@@ -1,12 +1,18 @@
 @use "../../foundation/color" as *;
 
 .p-access {
-    display: inline-block;
+    position: relative;
     font-family: "M PLUS 1p";
     font-weight: bold;
     height: auto;
+    width: auto;
+    display: block;
 
     &__comment {
+        max-height: 64.9rem;
+        width: 61%;
+        display: inline-block;
+        position: relative;
 
         h2 {
             height: auto;
@@ -17,9 +23,21 @@
             margin-bottom: 10.9rem;      
         }
 
+        h2:before {
+            content: '';
+            position: absolute;
+            bottom: -50.5px;
+            display: inline-block;
+            width: 7.5rem;
+            height: 0.2rem;
+            justify-content: left;
+            background-color: $color--white;
+        }
+
         p {
             height: auto;
             width: auto;
+            display: inline-block;
             position: relative;
             color: $color--white;
             font-size: 1.6rem;

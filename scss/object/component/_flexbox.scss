@@ -1,9 +1,13 @@
 .c-flexbox {
-    display: flex;
     
     &__branch-menu {
         display: flex;
         justify-content: space-between;
         gap: 80px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
     }
 }

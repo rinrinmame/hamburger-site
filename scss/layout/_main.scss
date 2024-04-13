@@ -8,7 +8,8 @@
     position: relative;
 
     &__contents {
-        padding: 0%;
+        height: auto;
+        display: block;
 
         h2 {
             font-family: "M PLUS 1p";
@@ -18,5 +19,10 @@
             height: 5.9rem;
             margin: 23.4rem auto 23.7rem 8.6rem;  
         }
+    }
+
+    &__access {
+        height: auto;
+        display: block;
     }
 }

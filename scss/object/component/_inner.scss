@@ -10,9 +10,15 @@
 
     &__list {
         padding: 1.4rem 2rem 1.4rem 2rem;
+        display: inline-block;
     }
 
     &__text {
-        padding: 8.6rem 13.4rem 6.7rem 11.9rem;
+        padding: 13% 8.6% 11.5% 7.6%;
+        display: inline-block;
+    }
+
+    &__footer{
+        padding: 4.1rem 0 2.7rem 0;
     }
 }
