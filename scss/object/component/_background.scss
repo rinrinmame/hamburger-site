@@ -46,14 +46,14 @@
         background: rgba($color: $color--clearblack, $alpha: 0.5);
     }
 
-    &__text {
-        height: auto;
-        width: 61%;
-        display: inline-block;
-        position: relative;
-        overflow: hidden;
-        object-fit: cover;
-        background-position: bottom;
-        background: rgba($color: $color--clearblack, $alpha: 0.2);
-    }
+    //&__text {
+        //height: auto;
+        //width: 61%;
+        //display: inline-block;
+        //position: relative;
+        //overflow: hidden;
+        //object-fit: cover;
+        //background-position: bottom;
+        //background: rgba($color: $color--clearblack, $alpha: 0.2);
+    //}
 }

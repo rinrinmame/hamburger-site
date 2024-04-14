@@ -14,6 +14,18 @@
         display: inline-block;
         position: relative;
 
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -50.5px;
+            display: inline-block;
+            height: auto;
+            width: 100%;
+            left: 0%;
+            top: 0%;
+            background: rgba($color: $color--clearblack, $alpha: 0.2);
+        }
+
         h2 {
             height: auto;
             width: auto;

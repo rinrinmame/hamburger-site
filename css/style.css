@@ -202,17 +202,6 @@ li {
   background-position: bottom;
   background: rgba(0, 0, 0, 0.5);
 }
-.c-background__text {
-  height: auto;
-  width: 61%;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: bottom;
-  background: rgba(0, 0, 0, 0.2);
-}
 
 .c-grid {
   height: 100vh;
@@ -309,6 +298,17 @@ li {
   width: 61%;
   display: inline-block;
   position: relative;
+}
+.p-access__comment:before {
+  content: "";
+  position: absolute;
+  bottom: -50.5px;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.2);
 }
 .p-access__comment h2 {
   height: auto;
