@@ -211,7 +211,6 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: bottom;
-  z-index: 100;
   background: rgba(0, 0, 0, 0.2);
 }
 
