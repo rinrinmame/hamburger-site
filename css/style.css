@@ -225,15 +225,30 @@ li {
 .c-title__header {
   font-family: "Roboto";
   color: #707070;
-  font-size: 6.4rem;
   font-weight: bold;
-  height: 38.7%;
-  width: 32.5rem;
-  margin: 6.6rem auto 6.7rem 6.5rem;
+  font-size: 4rem;
+  height: 4.7rem;
+  width: 20.3rem;
+  margin: 4.3rem auto 0 auto;
+}
+@media (min-width: 768px) {
+  .c-title__header {
+    height: 5.3rem;
+    width: 20.3rem;
+    margin: 4rem auto auto 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .c-title__header {
+    font-size: 6.4rem;
+    height: 7.5rem;
+    width: 32.5rem;
+    margin: 6.6rem auto 6.7rem 6.5rem;
+  }
 }
 .c-title__menu {
   font-family: "M PLUS 1p";
-  font-weight: 700;
+  font-weight: bold;
   font-size: 2.4rem;
   color: #707070;
   height: 3.6rem;

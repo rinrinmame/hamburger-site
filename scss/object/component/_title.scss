@@ -5,16 +5,29 @@
     &__header {
         font-family: "Roboto";
         color: $color--gray;
-        font-size: 6.4rem;
         font-weight: bold;
-        height: 38.7%;
-        width: 32.5rem;
-        margin: 6.6rem auto 6.7rem 6.5rem;
+        font-size: 4rem;
+        height: 4.7rem;
+        width: 20.3rem;
+        margin: 4.3rem auto 0 auto;
+
+        @include breakpoint(tablet) {
+            height: 5.3rem;
+            width: 20.3rem;
+            margin: 4rem auto auto 0 auto;
+        }
+
+        @include breakpoint(pc) {
+            font-size: 6.4rem;
+            height: 7.5rem;
+            width: 32.5rem;
+            margin: 6.6rem auto 6.7rem 6.5rem;
+        }
     }
 
     &__menu {
         font-family: "M PLUS 1p";
-        font-weight: 700;
+        font-weight: bold;
         font-size: 2.4rem;
         color: $color--gray;
         height: 3.6rem;
