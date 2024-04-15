@@ -1,9 +1,17 @@
 @use "../../foundation/" as *;
 
 .c-flexbox {
+
+    &__header {
+        display: block;
+
+        @include breakpoint(pc) {
+            display: flex;
+        }
+    }
     
     &__branch-menu {
-        display: block;
+        display: inline-block;
 
         @include breakpoint(pc) {
             display: flex;

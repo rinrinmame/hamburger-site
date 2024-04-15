@@ -28,17 +28,11 @@ li {
   grid-column: 1;
   background-color: #FFF7EF;
 }
-.l-header__nav {
-  display: flex;
+.l-header__button {
+  display: block;
 }
-.l-header__title {
-  font-family: "Roboto";
-  color: #707070;
-  font-size: 6.4rem;
-  font-weight: bold;
-  height: 38.7%;
-  width: 32.5rem;
-  margin: 6.6rem auto 6.7rem 6.5rem;
+.l-header__button h2 {
+  text-align: right;
 }
 
 .l-main {
@@ -90,9 +84,7 @@ li {
 .c-button__menu {
   font-family: Roboto;
   color: #707070;
-  font-size: 4rem;
   font-weight: bold;
-  margin: 8.4rem auto 9rem 4.6rem;
 }
 
 .c-inner__branch-menu {
@@ -230,7 +222,16 @@ li {
   }
 }
 
-.c-title {
+.c-title__header {
+  font-family: "Roboto";
+  color: #707070;
+  font-size: 6.4rem;
+  font-weight: bold;
+  height: 38.7%;
+  width: 32.5rem;
+  margin: 6.6rem auto 6.7rem 6.5rem;
+}
+.c-title__menu {
   font-family: "M PLUS 1p";
   font-weight: 700;
   font-size: 2.4rem;
@@ -279,8 +280,16 @@ li {
   position: relative;
 }
 
-.c-flexbox__branch-menu {
+.c-flexbox__header {
   display: block;
+}
+@media (min-width: 1024px) {
+  .c-flexbox__header {
+    display: flex;
+  }
+}
+.c-flexbox__branch-menu {
+  display: inline-block;
 }
 @media (min-width: 1024px) {
   .c-flexbox__branch-menu {
@@ -408,12 +417,29 @@ li {
   line-height: normal;
 }
 
-.u-header {
-  display: inline-block;
+.u-button__header {
+  font-size: 2rem;
+  height: 2.3rem;
+  width: 5.1rem;
+  margin: 0.8rem 0.8rem auto auto;
+}
+@media (min-width: 768px) {
+  .u-button__header {
+    font-size: 3.4rem;
+    height: 4rem;
+    width: 8.7rem;
+    margin: 0.8rem 0.8rem auto auto;
+  }
 }
 @media (min-width: 1024px) {
-  .u-header {
+  .u-button__header {
     display: none;
   }
+}
+.u-button__sidebar {
+  font-size: 3.4rem;
+  height: 4rem;
+  width: 8.7rem;
+  margin: 8.4rem auto 9rem 4.6rem;
 }
 /*# sourceMappingURL=style.css.map */

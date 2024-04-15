@@ -1,10 +1,23 @@
 @use "../../foundation/" as *;
 
 .c-title {
-    font-family: "M PLUS 1p";
-    font-weight: 700;
-    font-size: 2.4rem;
-    color: $color--gray;
-    height: 3.6rem;
-    margin: 4.8rem auto 3.2rem 4.6rem;
+
+    &__header {
+        font-family: "Roboto";
+        color: $color--gray;
+        font-size: 6.4rem;
+        font-weight: bold;
+        height: 38.7%;
+        width: 32.5rem;
+        margin: 6.6rem auto 6.7rem 6.5rem;
+    }
+
+    &__menu {
+        font-family: "M PLUS 1p";
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: $color--gray;
+        height: 3.6rem;
+        margin: 4.8rem auto 3.2rem 4.6rem;
+    }
 }

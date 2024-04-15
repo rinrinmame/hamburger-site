@@ -5,17 +5,11 @@
     grid-column: 1;
     background-color: $color--ivory;
 
-    &__nav {
-        display: flex;
-    }
+    &__button {
+        display: block;
 
-    &__title {
-        font-family: "Roboto";
-        color: $color--gray;
-        font-size: 6.4rem;
-        font-weight: bold;
-        height: 38.7%;
-        width: 32.5rem;
-        margin: 6.6rem auto 6.7rem 6.5rem;
+        h2 {
+            text-align: right;
+        }
     }
 }
