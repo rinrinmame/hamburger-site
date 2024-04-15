@@ -390,4 +390,13 @@ li {
   font-weight: regular;
   line-height: normal;
 }
+
+.u-header {
+  display: inline-block;
+}
+@media (min-width: 1024px) {
+  .u-header {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

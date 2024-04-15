@@ -1,0 +1,9 @@
+@use "../../foundation/" as *;
+
+.u-header {
+    display: inline-block;
+
+    @include breakpoint(pc) {
+        display: none;
+    }
+}
