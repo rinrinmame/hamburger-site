@@ -10,9 +10,13 @@
 
     &__comment {
         max-height: 64.9rem;
-        width: 61%;
+        width: 100%;
         display: inline-block;
         position: relative;
+
+        @include breakpoint(pc) {
+            width: 61%;    
+        }
 
         &:before {
             content: '';

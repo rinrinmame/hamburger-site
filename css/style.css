@@ -171,6 +171,7 @@ li {
 .c-background__title {
   height: 100%;
   width: 100%;
+  display: block;
   position: relative;
   overflow: hidden;
   -o-object-fit: cover;
@@ -279,9 +280,14 @@ li {
 }
 
 .c-flexbox__branch-menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .c-flexbox__branch-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+  }
 }
 .c-flexbox__footer {
   display: flex;
@@ -313,9 +319,14 @@ li {
 }
 .p-access__comment {
   max-height: 64.9rem;
-  width: 61%;
+  width: 100%;
   display: inline-block;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .p-access__comment {
+    width: 61%;
+  }
 }
 .p-access__comment:before {
   content: "";
@@ -376,6 +387,12 @@ li {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 8rem;
+}
+@media (min-width: 1024px) {
+  .p-branch-menu__takeout {
+    margin-bottom: 0;
+  }
 }
 .p-branch-menu__eatin {
   background-image: url(../../../images/main__eatin.jpg);

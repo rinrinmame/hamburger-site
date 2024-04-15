@@ -3,9 +3,13 @@
 .c-flexbox {
     
     &__branch-menu {
-        display: flex;
-        justify-content: space-between;
-        gap: 80px;
+        display: block;
+
+        @include breakpoint(pc) {
+            display: flex;
+            justify-content: space-between;
+            gap: 8rem;
+        }
     }
 
     &__footer {
