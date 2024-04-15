@@ -216,7 +216,7 @@ li {
   grid-template-rows: 215px 1fr 150px;
   grid-template-columns: 1fr 0%;
 }
-@media (min-width: 834px) {
+@media (min-width: 768px) {
   .c-grid {
     grid-template-rows: 217px 1fr 150px;
     grid-template-columns: 1fr 0%;
