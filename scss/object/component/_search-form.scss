@@ -3,7 +3,11 @@
 .c-search-form {
     display: inline-flex;
     position: relative;
-    margin: 2rem auto 0 auto;
+    margin: 4rem auto 3.9rem auto;
+
+    @include breakpoint(tablet) {
+        margin: 4rem auto 3.8rem auto;
+    }
 
     @include breakpoint(pc) {
         margin: 8.6rem 3.1rem 8.5rem auto;

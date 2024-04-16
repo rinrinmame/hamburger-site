@@ -34,6 +34,12 @@ li {
 .l-header__button h2 {
   text-align: right;
 }
+.l-header__title {
+  display: block;
+}
+.l-header__title h2 {
+  text-align: center;
+}
 
 .l-main {
   grid-row: 2;
@@ -108,7 +114,12 @@ li {
 .c-search-form {
   display: inline-flex;
   position: relative;
-  margin: 2rem auto 0 auto;
+  margin: 4rem auto 3.9rem auto;
+}
+@media (min-width: 768px) {
+  .c-search-form {
+    margin: 4rem auto 3.8rem auto;
+  }
 }
 @media (min-width: 1024px) {
   .c-search-form {
@@ -475,7 +486,6 @@ li {
     font-size: 3.4rem;
     height: 4rem;
     width: 8.7rem;
-    margin: 0.8rem 0.8rem 0 auto;
   }
 }
 @media (min-width: 1024px) {
