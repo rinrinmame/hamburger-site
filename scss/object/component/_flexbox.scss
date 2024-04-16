@@ -3,10 +3,12 @@
 .c-flexbox {
 
     &__header {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @include breakpoint(pc) {
-            display: flex;
+            flex-direction: row;
         }
     }
     

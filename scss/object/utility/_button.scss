@@ -6,13 +6,13 @@
         font-size: 2rem;
         height: 2.3rem;
         width: 5.1rem;
-        margin: 0.8rem 0.8rem auto auto;
+        margin: 0.8rem 0.8rem 0 auto;
 
         @include breakpoint(tablet) {
             font-size: 3.4rem;
             height: 4rem;
             width: 8.7rem;
-            margin: 0.8rem 0.8rem auto auto;
+            margin: 0.8rem 0.8rem 0 auto;
         }
     
         @include breakpoint(pc) {

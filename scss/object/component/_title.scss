@@ -9,12 +9,12 @@
         font-size: 4rem;
         height: 4.7rem;
         width: 20.3rem;
-        margin: 4.3rem auto 0 auto;
+        margin: 1.2rem auto 0 auto;
 
         @include breakpoint(tablet) {
             height: 5.3rem;
             width: 20.3rem;
-            margin: 4rem auto auto 0 auto;
+            margin: 2rem auto 0 auto;
         }
 
         @include breakpoint(pc) {
