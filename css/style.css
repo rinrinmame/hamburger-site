@@ -30,9 +30,12 @@ li {
 }
 .l-header__button {
   display: block;
+  position: relative;
 }
 .l-header__button h2 {
-  text-align: right;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 .l-header__title {
   display: block;
@@ -270,13 +273,13 @@ li {
   font-size: 4rem;
   height: 4.7rem;
   width: 20.3rem;
-  margin: 1.2rem auto 0 auto;
+  margin: 4.3rem auto 0 auto;
 }
 @media (min-width: 768px) {
   .c-title__header {
     height: 5.3rem;
     width: 20.3rem;
-    margin: 2rem auto 0 auto;
+    margin: 4rem auto 0 auto;
   }
 }
 @media (min-width: 1024px) {

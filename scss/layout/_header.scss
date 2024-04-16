@@ -7,9 +7,12 @@
 
     &__button {
         display: block;
+        position: relative;
 
         h2 {
-            text-align: right;
+            position: absolute;
+            top: 8px;
+            right: 8px;
         }
     }
 
