@@ -3,8 +3,14 @@
 .c-item {
     font-family: "M PLUS 1p";
     font-weight: regular;
-    font-size: 2rem;
     color: $color--gray;
-    height: 3rem;
-    margin: 0px 6.6rem 2rem 6.6rem;
+    height: auto;
+    width: auto;
+    position: relative;
+    font-size: 2rem;
+    margin: 4rem auto 2rem 2rem;
+
+    @include breakpoint(tablet) {
+        margin: 3.2rem auto 2rem 2rem;
+    }
 }

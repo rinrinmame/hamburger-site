@@ -20,7 +20,17 @@
         display: inline-block;
     }
 
-    &__footer{
+    &__sidebar {
+        padding-left: 12.5%;
+        display: block;
+        position: relative;
+    }
+
+    &__menu {
+        padding-left: 5.4%;
+    }
+
+    &__footer {
         padding: 4.1rem 0 2.7rem 0;
     }
 }

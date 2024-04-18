@@ -4,4 +4,11 @@
     color: $color--gray;
     font-weight: regular;
     line-height: normal;
+    display: block;
+    position: relative;
+    margin-bottom: 6rem;
+
+    @include breakpoint(tablet) {
+        margin-bottom: 4.8rem;
+    }
 }
