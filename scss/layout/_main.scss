@@ -7,7 +7,7 @@
 
     &__contents {
         height: auto;
-        display: block;
+        display: inline-block;
 
         h2 {
             font-family: "M PLUS 1p";
@@ -19,8 +19,7 @@
             margin: 12.2rem auto 11.1rem 2.5rem;
 
             @include breakpoint(pc) {
-                font-size: 4rem; 
-                //height: 5.9rem;    
+                font-size: 4rem;   
                 margin: 23.4rem auto 23.7rem 8.6rem;
             }
         }

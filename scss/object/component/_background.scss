@@ -7,13 +7,27 @@
     }
 
     &__title {
-        height: 100%;
+        height: 28.5rem;
         width: 100%;
         display: block;
         position: relative;
         overflow: hidden;
-        object-fit: cover;
-        background-image: url(../../../images/main__title.jpg);
+        background-size: cover;
+        background-position: right;
+        background-image: url(../../../images/main__title--sp.jpg);
+
+        @include breakpoint(sp2) {
+            background-image: url(../../../images/main__title--tablet.jpg);
+            height: 28.5rem;
+        }
+
+        @include breakpoint(tablet2) {
+            background-image: url(../../../images/main__title--pc.jpg);
+        }
+
+        @include breakpoint(pc) {
+            height: 53rem;
+        }
     }
 
     &__category {
