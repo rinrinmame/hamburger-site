@@ -40,7 +40,7 @@ li {
 .l-header__title {
   display: block;
 }
-.l-header__title h2 {
+.l-header__title h1 {
   text-align: center;
 }
 
@@ -56,10 +56,17 @@ li {
 .l-main__contents h2 {
   font-family: "M PLUS 1p";
   font-weight: bold;
-  font-size: 4rem;
   color: #FFFFFF;
-  height: 5.9rem;
-  margin: 23.4rem auto 23.7rem 8.6rem;
+  height: auto;
+  width: auto;
+  font-size: 3.6rem;
+  margin: 12.2rem auto 11.1rem 2.5rem;
+}
+@media (min-width: 1024px) {
+  .l-main__contents h2 {
+    font-size: 4rem;
+    margin: 23.4rem auto 23.7rem 8.6rem;
+  }
 }
 .l-main__access {
   height: auto;
@@ -312,13 +319,23 @@ li {
 .c-category h3 {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 8rem;
   height: auto;
   width: auto;
   color: #EAEAEA;
   display: inline-block;
   position: relative;
   margin-bottom: 58%;
+  font-size: 4.1rem;
+}
+@media (min-width: 768px) {
+  .c-category h3 {
+    font-size: 4.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-category h3 {
+    font-size: 8rem;
+  }
 }
 .c-category dt {
   font-weight: bold;
