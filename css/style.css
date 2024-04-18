@@ -236,19 +236,14 @@ li {
   background-position: right;
   background-image: url(../../../images/main__title--sp.jpg);
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .c-background__title {
     background-image: url(../../../images/main__title--tablet.jpg);
-    height: 28.5rem;
-  }
-}
-@media (min-width: 835px) {
-  .c-background__title {
-    background-image: url(../../../images/main__title--pc.jpg);
   }
 }
 @media (min-width: 1024px) {
   .c-background__title {
+    background-image: url(../../../images/main__title--pc.jpg);
     height: 53rem;
   }
 }
@@ -256,8 +251,7 @@ li {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   background: rgba(255, 255, 255, 0.79);
   margin-bottom: 3.2%;
 }
@@ -267,8 +261,7 @@ li {
   display: block;
   position: relative;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   background-position: top;
   background-image: url(../../../images/main__map.jpg);
 }
@@ -283,8 +276,7 @@ li {
   display: block;
   position: relative;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   background-position: bottom;
   background: rgba(0, 0, 0, 0.5);
 }
