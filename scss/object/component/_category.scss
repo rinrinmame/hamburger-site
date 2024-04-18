@@ -2,7 +2,7 @@
 
 .c-category {
     height: auto;
-    width: 100%;
+    width: auto;
     display: inline-block;
     font-family: "M PLUS 1p";
     color: $color--black;
@@ -32,12 +32,21 @@
 
     dt {
         font-weight: bold;
-        font-size: 2.4rem;
         height: auto;
         width: auto;
-        margin-bottom: 1.4rem;
+        font-size: 2.2rem;
         display: inline-block;
         position: relative;
+        margin-bottom: 0.8rem;
+
+        @include breakpoint(tablet) {
+            font-size: 2.4rem;
+            margin-bottom: 1.6rem;
+        }
+
+        @include breakpoint(pc) {        
+            margin-bottom: 1.8rem;   
+        }
     }
 
     dd {
