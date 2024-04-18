@@ -238,8 +238,13 @@ li {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
-  background-position: bottom;
+  background-position: top;
   background-image: url(../../../images/main__map.jpg);
+}
+@media (min-width: 1024px) {
+  .c-background__access {
+    background-position: bottom;
+  }
 }
 .c-background__map {
   height: auto;

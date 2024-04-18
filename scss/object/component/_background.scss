@@ -32,8 +32,12 @@
         position: relative;
         overflow: hidden;
         object-fit: cover;
-        background-position: bottom;
+        background-position: top;
         background-image: url(../../../images/main__map.jpg);
+
+        @include breakpoint(pc) {
+            background-position: bottom;
+        }
     }
 
     &__map {
