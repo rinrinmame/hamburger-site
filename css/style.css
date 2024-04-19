@@ -262,12 +262,17 @@ li {
   position: relative;
   overflow: hidden;
   background-size: cover;
-  background-position: top;
-  background-image: url(../../../images/main__map.jpg);
+  background-position: center;
+  background-image: url(../../../images/main__map-sp.jpg);
+}
+@media (min-width: 768px) {
+  .c-background__access {
+    background-image: url(../../../images/main__map-tablet.jpg);
+  }
 }
 @media (min-width: 1024px) {
   .c-background__access {
-    background-position: bottom;
+    background-image: url(../../../images/main__map-pc.jpg);
   }
 }
 .c-background__map {

@@ -1,4 +1,5 @@
 @use "../../foundation/" as *;
+@use "sass:math";
 
 .c-background {
 
@@ -42,11 +43,16 @@
         position: relative;
         overflow: hidden;
         background-size: cover;
-        background-position: top;
-        background-image: url(../../../images/main__map.jpg);
+        background-position: center;
+        background-image: url(../../../images/main__map-sp.jpg);
+
+        @include breakpoint(tablet) {
+            background-image: url(../../../images/main__map-tablet.jpg);
+        }
 
         @include breakpoint(pc) {
-            background-position: bottom;
+            background-image: url(../../../images/main__map-pc.jpg);
+            
         }
     }
 
