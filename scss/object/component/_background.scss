@@ -14,7 +14,7 @@
         position: relative;
         overflow: hidden;
         background-size: cover;
-        background-position: right;
+        background-position: center;
         background-image: url(../../../images/main__title--sp.jpg);
 
         @include breakpoint(tablet) {

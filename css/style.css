@@ -114,8 +114,18 @@ li {
   display: inline-block;
 }
 .c-inner__text {
-  padding: 13% 8.6% 11.5% 7.6%;
-  display: inline-block;
+  display: block;
+  padding: 6% 10.6% 8.2% 10.6%;
+}
+@media (min-width: 768px) {
+  .c-inner__text {
+    padding: 10.1% 3.4% 9.6% 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__text {
+    padding: 13% 8.6% 11.5% 7.6%;
+  }
 }
 .c-inner__sidebar {
   padding-left: 12.5%;
@@ -132,6 +142,8 @@ li {
 .c-search-form {
   display: inline-flex;
   position: relative;
+  height: auto;
+  width: auto;
   margin: 4rem auto 3.9rem auto;
 }
 @media (min-width: 768px) {
@@ -233,7 +245,7 @@ li {
   position: relative;
   overflow: hidden;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-image: url(../../../images/main__title--sp.jpg);
 }
 @media (min-width: 768px) {
@@ -458,8 +470,9 @@ li {
 .p-access__comment {
   max-height: 64.9rem;
   width: 100%;
-  display: inline-block;
+  display: block;
   position: relative;
+  margin-bottom: 2%;
 }
 @media (min-width: 1024px) {
   .p-access__comment {
@@ -469,7 +482,7 @@ li {
 .p-access__comment:before {
   content: "";
   position: absolute;
-  bottom: -50.5px;
+  bottom: -5.05rem;
   display: inline-block;
   height: auto;
   width: 100%;
@@ -482,18 +495,29 @@ li {
   width: auto;
   position: relative;
   color: #FFFFFF;
-  font-size: 3.6rem;
-  margin-bottom: 10.9rem;
+  font-size: 3rem;
+  margin-bottom: 2.9rem;
+}
+@media (min-width: 1024px) {
+  .p-access__comment h2 {
+    font-size: 3.6rem;
+    margin-bottom: 10.9rem;
+  }
 }
 .p-access__comment h2:before {
   content: "";
   position: absolute;
-  bottom: -50.5px;
+  bottom: -15px;
   display: inline-block;
   width: 7.5rem;
   height: 0.2rem;
   justify-content: left;
   background-color: #FFFFFF;
+}
+@media (min-width: 1024px) {
+  .p-access__comment h2:before {
+    bottom: -50.5px;
+  }
 }
 .p-access__comment p {
   height: auto;
@@ -501,8 +525,13 @@ li {
   display: inline-block;
   position: relative;
   color: #FFFFFF;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2;
+}
+@media (min-width: 1024px) {
+  .p-access__comment p {
+    font-size: 1.6rem;
+  }
 }
 
 .p-branch-menu h3 {

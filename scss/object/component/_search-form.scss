@@ -3,6 +3,8 @@
 .c-search-form {
     display: inline-flex;
     position: relative;
+    height: auto;
+    width: auto;
     margin: 4rem auto 3.9rem auto;
 
     @include breakpoint(tablet) {
