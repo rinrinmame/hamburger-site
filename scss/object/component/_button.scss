@@ -7,9 +7,15 @@
         font-family: Roboto;
         color: $color--gray;
         font-weight: bold;
-        width: $btnWidth;
-        height: $btnHeight;
         position: relative;
+    }
+
+    &__hamburger {
+        width: 32px;
+        height: 36px;
+        display: block;
+        position: relative;
+        margin: 0.8rem 1.1rem auto auto;
 
         @include breakpoint(pc) {
             display: none;
@@ -18,10 +24,11 @@
         &::before,&::after {
             content: "";
             width: $btnWidth;
+            height: $btnHeight;
             position: absolute;
-            left: calc(50% - math.div(#{$btnWidth},2));
+            left: calc( 50% - math.div(#{$btnWidth},2) );
             display: block;
-            transform: 0.2s;
+            transition: transform 0.2s;
         }
 
         &::before {
@@ -30,6 +37,16 @@
 
         &::after {
             top: 38px;
+        }
+
+        >span {
+            width: $btnWidth;
+            height: $btnHeight;
+            font-size: 0;
+            background-size: auto $btnHeight;
+            left: calc( 50% - math.div(#{$btnWidth},2) );
+            top: 50%;
+            transition: transform 0.2s;
         }
 
         &.is-open {
