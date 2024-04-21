@@ -1,10 +1,48 @@
 @use "../../foundation/" as *;
+@use "sass:math";
 
 .c-button {
-
+    
     &__menu {
         font-family: Roboto;
         color: $color--gray;
         font-weight: bold;
+        width: $btnWidth;
+        height: $btnHeight;
+        position: relative;
+
+        @include breakpoint(pc) {
+            display: none;
+        }
+
+        &::before,&::after {
+            content: "";
+            width: $btnWidth;
+            position: absolute;
+            left: calc(50% - math.div(#{$btnWidth},2));
+            display: block;
+            transform: 0.2s;
+        }
+
+        &::before {
+            top: 22px;
+        }
+
+        &::after {
+            top: 38px;
+        }
+
+        &.is-open {
+
+            &::before {
+                transform: rotate(45deg);
+                top: 28px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 28px;
+            }
+        }
     }
 }

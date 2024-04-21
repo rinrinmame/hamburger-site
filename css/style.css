@@ -101,6 +101,36 @@ li {
   font-family: Roboto;
   color: #707070;
   font-weight: bold;
+  width: 45.25px;
+  height: 6px;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .c-button__menu {
+    display: none;
+  }
+}
+.c-button__menu::before, .c-button__menu::after {
+  content: "";
+  width: 45.25px;
+  position: absolute;
+  left: calc(50% - 45.25px/2);
+  display: block;
+  transform: 0.2s;
+}
+.c-button__menu::before {
+  top: 22px;
+}
+.c-button__menu::after {
+  top: 38px;
+}
+.c-button__menu.is-open::before {
+  transform: rotate(45deg);
+  top: 28px;
+}
+.c-button__menu.is-open::after {
+  transform: rotate(-45deg);
+  top: 28px;
 }
 
 .c-inner__branch-menu {
