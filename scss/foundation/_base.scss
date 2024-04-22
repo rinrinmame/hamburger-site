@@ -24,7 +24,7 @@ li {
     font-family: "Roboto", sans-serif,"M PLUS 1p";
     box-sizing: border-box;
 
-    &.is-open {
+    &.is-modal {
         overflow: hidden;
         
         &::before {

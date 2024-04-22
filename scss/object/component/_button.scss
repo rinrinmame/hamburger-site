@@ -8,13 +8,6 @@
         color: $color--gray;
         font-weight: bold;
         position: relative;
-
-        &:active,
-        &:focus,
-        &:hover,
-        &:link {
-            color: $color--offWhite;
-        }
     }
 
     &__hamburger {
@@ -31,13 +24,6 @@
 
         @include breakpoint(pc) {
             display: none;
-        }
-
-        &:active,
-        &:focus,
-        &:hover,
-        &:link {
-            color: $color--offWhite;
         }
 
         &::before,

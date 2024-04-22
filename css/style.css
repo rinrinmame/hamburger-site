@@ -22,10 +22,10 @@ li {
   font-family: "Roboto", sans-serif, "M PLUS 1p";
   box-sizing: border-box;
 }
-.l-body.is-open {
+.l-body.is-modal {
   overflow: hidden;
 }
-.l-body.is-open::before {
+.l-body.is-modal::before {
   content: "";
   position: fixed;
   display: block;
@@ -146,9 +146,6 @@ li {
   font-weight: bold;
   position: relative;
 }
-.c-button__menu:active, .c-button__menu:focus, .c-button__menu:hover, .c-button__menu:link {
-  color: #F2EDE9;
-}
 .c-button__hamburger {
   width: 32px;
   height: 36px;
@@ -166,9 +163,6 @@ li {
   .c-button__hamburger {
     display: none;
   }
-}
-.c-button__hamburger:active, .c-button__hamburger:focus, .c-button__hamburger:hover, .c-button__hamburger:link {
-  color: #F2EDE9;
 }
 .c-button__hamburger::before, .c-button__hamburger::after {
   content: "";
