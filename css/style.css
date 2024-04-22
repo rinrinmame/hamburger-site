@@ -22,10 +22,10 @@ li {
   font-family: "Roboto", sans-serif, "M PLUS 1p";
   box-sizing: border-box;
 }
-.l-body.is-modal {
+.l-body.is-fix {
   overflow: hidden;
 }
-.l-body.is-modal::before {
+.l-body.is-fix::before {
   content: "";
   position: fixed;
   display: block;
