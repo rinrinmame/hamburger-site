@@ -643,7 +643,12 @@ li {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .p-branch-menu__takeout {
+    margin-bottom: 8rem;
+  }
 }
 @media (min-width: 1024px) {
   .p-branch-menu__takeout {
