@@ -9,11 +9,6 @@
 			@content;
 		}
 	}
-	@if $point == tablet2 {
-		@media (min-width: 835px) {
-			@content;
-		}
-	}
 	@if $point == pc {
 		@media (min-width: 1024px) {
 			@content;
