@@ -1,5 +1,5 @@
 @mixin breakpoint($point) {
-	@if $point == sp2 {
+	@if $point == sp {
 		@media (min-width: 376px) {
 			@content;
 		}
