@@ -223,7 +223,7 @@ li {
   position: relative;
 }
 .c-inner__menu {
-  padding-left: 5.4%;
+  padding-bottom: 4.8rem;
 }
 .c-inner__footer {
   padding: 4.1rem 0 2.7rem 0;
@@ -701,10 +701,11 @@ li {
 @media (min-width: 1024px) {
   .u-button__sidebar {
     display: block;
+    position: relative;
     font-size: 3.4rem;
     height: 4rem;
     width: 8.7rem;
-    margin: 8.4rem auto 9rem 4.6rem;
+    margin: 8.4rem auto 9rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -24,10 +24,11 @@
     
         @include breakpoint(pc) {
             display: block;
+            position: relative;
             font-size: 3.4rem;
             height: 4rem;
             width: 8.7rem;
-            margin: 8.4rem auto 9rem 4.6rem;
+            margin: 8.4rem auto 9rem 0;
         }
     }
 }
