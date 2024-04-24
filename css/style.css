@@ -351,7 +351,7 @@ li {
 }
 .c-background__category {
   height: 100%;
-  width: 100%;
+  width: auto;
   overflow: hidden;
   background-size: cover;
   background: rgba(255, 255, 255, 0.79);
@@ -359,7 +359,7 @@ li {
 }
 .c-background__access {
   height: 100%;
-  width: 100%;
+  width: auto;
   display: block;
   position: relative;
   overflow: hidden;
@@ -557,11 +557,10 @@ li {
   display: block;
 }
 .p-access__comment {
-  max-height: 64.9rem;
   width: 100%;
+  height: auto;
   display: block;
   position: relative;
-  margin-bottom: 2%;
 }
 @media (min-width: 1024px) {
   .p-access__comment {
