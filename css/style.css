@@ -638,7 +638,7 @@ li {
 }
 .p-branch-menu__takeout {
   background-image: url(../../../images/main__takeout.jpg);
-  height: 100%;
+  height: auto;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -656,7 +656,7 @@ li {
 }
 .p-branch-menu__eatin {
   background-image: url(../../../images/main__eatin.jpg);
-  height: 100%;
+  height: auto;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

@@ -21,7 +21,7 @@
 
     &__takeout {  
         background-image: url(../../../images/main__takeout.jpg);
-        height: 100%;
+        height: auto;
         width: 100%;
         object-fit: cover;
         margin-bottom: 2rem;
@@ -38,7 +38,7 @@
 
     &__eatin {        
         background-image: url(../../../images/main__eatin.jpg);
-        height: 100%;
+        height: auto;
         width: 100%;
         object-fit: cover;
     }
