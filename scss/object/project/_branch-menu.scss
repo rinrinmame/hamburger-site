@@ -24,15 +24,6 @@
         height: auto;
         width: 100%;
         object-fit: cover;
-        margin-bottom: 2rem;
-
-        @include breakpoint(tablet) {
-            margin-bottom: 8rem;
-        }
-
-        @include breakpoint(pc) {
-            margin-bottom: 0;
-        }
     }
 
 

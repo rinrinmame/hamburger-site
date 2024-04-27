@@ -195,6 +195,9 @@ li {
 
 .c-inner__branch-menu {
   padding: 7.6% 7.6% 7.6% 7.6%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .c-inner__category {
   padding: 0 3.4% 0 3.4%;
@@ -206,6 +209,7 @@ li {
   padding: 1.4rem 2rem 1.4rem 2rem;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .c-inner__text {
   display: block;
@@ -331,6 +335,9 @@ li {
 
 .c-background__branch-menu {
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .c-background__title {
   height: 28.5rem;
@@ -355,18 +362,17 @@ li {
 }
 .c-background__category {
   height: auto;
-  width: auto;
+  width: 100%;
   overflow: hidden;
   background-size: cover;
   background: rgba(255, 255, 255, 0.79);
   margin-bottom: 3.2%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 .c-background__access {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   display: block;
   position: relative;
   overflow: hidden;
@@ -532,11 +538,18 @@ li {
 .c-flexbox__branch-menu {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  gap: 2rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .c-flexbox__branch-menu {
     flex-direction: row;
     justify-content: space-between;
+    gap: 4.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-flexbox__branch-menu {
     gap: 8rem;
   }
 }
@@ -656,17 +669,6 @@ li {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 2rem;
-}
-@media (min-width: 768px) {
-  .p-branch-menu__takeout {
-    margin-bottom: 8rem;
-  }
-}
-@media (min-width: 1024px) {
-  .p-branch-menu__takeout {
-    margin-bottom: 0;
-  }
 }
 .p-branch-menu__eatin {
   background-image: url(../../../images/main__eatin.jpg);
