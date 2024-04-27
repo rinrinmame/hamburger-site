@@ -1,5 +1,7 @@
 @use "../../foundation/" as *;
 
 .c-list {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }

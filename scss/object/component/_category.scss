@@ -3,7 +3,9 @@
 .c-category {
     height: auto;
     width: auto;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     font-family: "M PLUS 1p";
     color: $color--black;
     background-color: $color--white;
@@ -38,6 +40,7 @@
         display: inline-block;
         position: relative;
         margin-bottom: 0.8rem;
+        flex-grow: 1;
 
         @include breakpoint(tablet) {
             font-size: 2.4rem;
@@ -57,5 +60,6 @@
         line-height: 1.7;
         display: inline-block;
         position: relative;
+        flex-grow: 1;
     }
 }

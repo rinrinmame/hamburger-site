@@ -198,10 +198,15 @@ li {
 }
 .c-inner__category {
   padding: 0 3.4% 0 3.4%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .c-inner__list {
   padding: 1.4rem 2rem 1.4rem 2rem;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .c-inner__text {
   display: block;
@@ -350,12 +355,15 @@ li {
   }
 }
 .c-background__category {
-  height: 100%;
+  height: auto;
   width: auto;
   overflow: hidden;
   background-size: cover;
   background: rgba(255, 255, 255, 0.79);
   margin-bottom: 3.2%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .c-background__access {
   height: 100%;
@@ -450,7 +458,9 @@ li {
 .c-category {
   height: auto;
   width: auto;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   font-family: "M PLUS 1p";
   color: #3C2A10;
   background-color: #FFFFFF;
@@ -486,6 +496,7 @@ li {
   display: inline-block;
   position: relative;
   margin-bottom: 0.8rem;
+  flex-grow: 1;
 }
 @media (min-width: 768px) {
   .c-category dt {
@@ -506,6 +517,7 @@ li {
   line-height: 1.7;
   display: inline-block;
   position: relative;
+  flex-grow: 1;
 }
 
 .c-flexbox__header {
@@ -535,7 +547,9 @@ li {
 }
 
 .c-list {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .c-footer-menu {
