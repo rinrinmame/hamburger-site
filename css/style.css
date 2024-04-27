@@ -519,11 +519,12 @@ li {
   }
 }
 .c-flexbox__branch-menu {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 1024px) {
   .c-flexbox__branch-menu {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 8rem;
   }
