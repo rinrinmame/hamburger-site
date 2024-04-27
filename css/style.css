@@ -206,7 +206,6 @@ li {
   padding: 1.4rem 2rem 1.4rem 2rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 .c-inner__text {
   display: block;
