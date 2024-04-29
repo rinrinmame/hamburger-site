@@ -594,11 +594,16 @@ li {
   position: absolute;
   bottom: -5.05rem;
   display: inline-block;
-  height: auto;
+  height: 61%;
   width: 100%;
   left: 0%;
   top: 0%;
   background: rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .p-access__comment:before {
+    height: auto;
+  }
 }
 .p-access__comment h2 {
   height: auto;
