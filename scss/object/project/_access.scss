@@ -23,11 +23,15 @@
             position: absolute;
             bottom: -5.05rem;
             display: inline-block;
-            height: auto;
+            height: 61%;
             width: 100%;
             left: 0%;
             top: 0%;
             background: rgba($color: $color--clearblack, $alpha: 0.2);
+
+            @include breakpoint(tablet) {
+                height: auto;
+            }
         }
 
         h2 {
