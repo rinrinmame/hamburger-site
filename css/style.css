@@ -203,13 +203,11 @@ li {
   padding: 0 3.4% 0 3.4%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 .c-inner__list {
   padding: 1.4rem 2rem 1.4rem 2rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 .c-inner__text {
   display: block;
@@ -369,7 +367,6 @@ li {
   margin-bottom: 3.2%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 .c-background__access {
   height: auto;
@@ -466,7 +463,6 @@ li {
   width: auto;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   font-family: "M PLUS 1p";
   color: #3C2A10;
   background-color: #FFFFFF;
@@ -499,9 +495,9 @@ li {
   height: auto;
   width: auto;
   font-size: 2.2rem;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin-bottom: 0.8rem;
 }
 @media (min-width: 768px) {
   .c-category dt {
@@ -520,9 +516,8 @@ li {
   height: auto;
   width: auto;
   line-height: 1.7;
-  display: inline-block;
+  flex-direction: column;
   position: relative;
-  flex-grow: 1;
 }
 
 .c-flexbox__header {
@@ -561,7 +556,7 @@ li {
 .c-list {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  margin-top: auto;
 }
 
 .c-footer-menu {
@@ -652,6 +647,8 @@ li {
 .p-branch-menu h3 {
   margin-top: 2.8rem;
   margin-left: 2.2rem;
+  display: flex;
+  flex-direction: column;
 }
 .p-branch-menu h3:before {
   content: "";
