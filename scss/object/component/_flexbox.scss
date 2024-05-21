@@ -50,24 +50,16 @@
     }
 
     &__discription {
+        height: auto;
+        width: auto;
         display: flex;
         flex-direction: column;
     }
 
-    &__card {
+    &__container {
+        height: auto;
+        width: auto;
         display: flex;
         flex-direction: column;
-
-        @include breakpoint(tablet) {
-            flex-direction: inherit;
-        }
-
-        img {
-            flex: 1;
-        }
-
-        .c-card {
-            flex: 1;
-        }
     }
 }

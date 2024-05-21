@@ -220,16 +220,16 @@ li {
   padding: 4.1rem 0 2.7rem 0;
 }
 .c-inner__archive {
-  padding: 3.2rem 1.8rem 3.2rem 1.8rem;
+  padding: 1.38% 5.3% 0 5.3%;
 }
 @media (min-width: 768px) {
   .c-inner__archive {
-    padding: 3.9rem 3.5rem 3.2rem 3.5rem;
+    padding: 2.48% 5.1% 0 5.1%;
   }
 }
 @media (min-width: 1024px) {
   .c-inner__archive {
-    padding: 6.3rem 10rem 6.4rem 10rem;
+    padding: 3.1% 6.4% 0 3.1%;
   }
 }
 .c-inner__discription {
@@ -244,6 +244,21 @@ li {
 @media (min-width: 1024px) {
   .c-inner__discription {
     padding-bottom: 7rem;
+  }
+}
+.c-inner__card {
+  display: flex;
+  flex-direction: column;
+  padding: 9.1% 4.79% 12.3% 4.79%;
+}
+@media (min-width: 768px) {
+  .c-inner__card {
+    padding: 8.7% 15.6% 11.2% 9.1%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__card {
+    padding: 11.8% 15.38% 12.7% 9.31%;
   }
 }
 
@@ -416,9 +431,13 @@ li {
   display: block;
   position: relative;
   overflow: hidden;
-  background-size: cover;
   background-position: left;
   background-image: url(../../../images/main__takeout.jpg);
+}
+@media (min-width: 768px) {
+  .c-background__cheeseburger {
+    background-size: cover;
+  }
 }
 @media (min-width: 1024px) {
   .c-background__cheeseburger {
@@ -433,7 +452,7 @@ li {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.c-grid {
+.c-grid__body {
   height: 100vh;
   width: 100%;
   display: grid;
@@ -441,15 +460,33 @@ li {
   grid-template-columns: 1fr 0%;
 }
 @media (min-width: 768px) {
-  .c-grid {
+  .c-grid__body {
     grid-template-rows: 217px 1fr 150px;
     grid-template-columns: 1fr 0%;
   }
 }
 @media (min-width: 1024px) {
-  .c-grid {
+  .c-grid__body {
     grid-template-rows: 217px 1fr 150px;
     grid-template-columns: 1fr 20%;
+  }
+}
+.c-grid__card {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .c-grid__card {
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-grid__card {
+    margin-bottom: 3rem;
   }
 }
 
@@ -662,23 +699,16 @@ li {
   }
 }
 .c-flexbox__discription {
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
-.c-flexbox__card {
+.c-flexbox__container {
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 768px) {
-  .c-flexbox__card {
-    flex-direction: inherit;
-  }
-}
-.c-flexbox__card img {
-  flex: 1;
-}
-.c-flexbox__card .c-card {
-  flex: 1;
 }
 
 .c-list {
@@ -699,23 +729,90 @@ li {
 }
 
 .c-card {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  height: auto;
+  width: auto;
   background-color: #3C2B1C;
-  height: 47.1rem;
-  width: 67.7rem;
+  display: flex;
+  flex-direction: column;
 }
 .c-card__title {
+  height: auto;
+  width: auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   color: #FFFFFF;
+  margin-bottom: 5.9%;
+}
+@media (min-width: 1024px) {
+  .c-card__title {
+    font-size: 3.6rem;
+    margin-bottom: 9.3%;
+  }
 }
 .c-card__title-sub {
+  height: auto;
+  width: auto;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   color: #FFFFFF;
+  margin-bottom: 1.9%;
+}
+@media (min-width: 1024px) {
+  .c-card__title-sub {
+    font-size: 2.4rem;
+    margin-bottom: 12.7%;
+  }
 }
 .c-card__text {
+  font-weight: 400;
+  height: auto;
+  width: auto;
+  font-size: 1.6rem;
+  line-height: 1.49;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   color: #FFFFFF;
+  margin-bottom: 11.2%;
+}
+@media (min-width: 768px) {
+  .c-card__text {
+    margin-bottom: 12.6%;
+  }
+}
+.c-card__button {
+  height: 4.247rem;
+  width: 16.316rem;
+  display: flex;
+  flex-direction: column;
+  color: #707070;
+  background-color: #FFFFFF;
+  border-radius: 35px 35px 35px 35px;
+  margin-left: 6.39rem;
+  margin-right: 7.69rem;
+}
+@media (min-width: 768px) {
+  .c-card__button {
+    margin: 8rem;
+    margin-right: 4.08rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-card__button {
+    margin-left: 14.2rem;
+    margin-right: 7.5rem;
+  }
 }
 
 .c-text__discription {
   font-family: "M PLUS 1p";
-  font-weight: regular;
+  font-weight: 400;
   height: auto;
   width: auto;
   display: inline-block;
@@ -848,13 +945,13 @@ li {
   }
 }
 
-.p-card__double-cheeseburger {
-  margin: 2.1rem 0;
-}
-@media (min-width: 1024px) {
-  .p-card__double-cheeseburger {
-    margin: 3rem 0;
-  }
+.p-card img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .u-button__header {

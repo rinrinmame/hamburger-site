@@ -49,14 +49,14 @@
     }
 
     &__archive {
-        padding: 3.2rem 1.8rem 3.2rem 1.8rem;
+        padding: 1.38% 5.3% 0 5.3%;
 
         @include breakpoint(tablet) {
-            padding: 3.9rem 3.5rem 3.2rem 3.5rem;
+            padding: 2.48% 5.1% 0 5.1%;
         }
         
         @include breakpoint(pc) {
-            padding: 6.3rem 10rem 6.4rem 10rem;
+            padding: 3.1% 6.4% 0 3.1%;
         }
     }
     &__discription {
@@ -69,6 +69,20 @@
 
         @include breakpoint(pc) {
             padding-bottom: 7rem;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 9.1% 4.79% 12.3% 4.79%;
+
+        @include breakpoint(tablet) {
+            padding: 8.7% 15.6% 11.2% 9.1%;
+        }
+        
+        @include breakpoint(pc) {
+            padding: 11.8% 15.38% 12.7% 9.31%;
         }
     }
 }

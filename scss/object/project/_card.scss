@@ -1,45 +1,12 @@
 @use "../../foundation/" as *;
 
-//.p-card__cheeseburger {
-    //img {
-        //grid-row: 1;
-        //grid-column: 1;
-    //}
-
-    //.c-card {
-        //grid-row: 1;
-        //grid-column: 2;
-   // }
-//}
-
-//.p-card__double-cheeseburger {
-    //img {
-        //grid-row: 2;
-        //grid-column: 1;
-    //}
-
-    //.c-card {
-        //grid-row: 2;
-        //grid-column: 2;
-    //}
-//}
-
-//.p-card__special-cheeseburger {
-    //img {
-        //grid-row: 3;
-        //grid-column: 1;
-    //}
-
-    //.c-card {
-        //grid-row: 3;
-        //grid-column: 2;
-    //}
-//}
-
-.p-card__double-cheeseburger {
-    margin: 2.1rem 0;
-
-    @include breakpoint(pc) {
-        margin: 3rem 0;
+.p-card {
+    img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        //object-position: left;
+        display: flex;
+        flex-direction: column;
     }
 }

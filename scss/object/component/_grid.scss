@@ -1,29 +1,39 @@
 @use "../../foundation/" as *;
 
 .c-grid {
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-rows:215px 1fr 150px;
-    grid-template-columns: 1fr 0%;
 
-    @include breakpoint(tablet) {
-        grid-template-rows:217px 1fr 150px;
+    &__body {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows:215px 1fr 150px;
         grid-template-columns: 1fr 0%;
+
+        @include breakpoint(tablet) {
+            grid-template-rows:217px 1fr 150px;
+            grid-template-columns: 1fr 0%;
+        }
+
+        @include breakpoint(pc) {
+            grid-template-rows:217px 1fr 150px;
+            grid-template-columns: 1fr 20%;
+        }
     }
 
-    @include breakpoint(pc) {
-        grid-template-rows:217px 1fr 150px;
-        grid-template-columns: 1fr 20%;
+   &__card {
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-rows: 1fr 1.5fr;
+        margin-bottom: 2rem;
+
+        @include breakpoint(tablet) {
+            grid-template-rows: 1fr;
+            grid-template-columns: 50% 50%;
+        }
+
+        @include breakpoint(pc) {
+            margin-bottom: 3rem;
+        }
     }
 }
-
-//.c-grid__card {
-    //grid-auto-rows: 1fr 1fr 1fr;
-    //grid-template-columns: 1fr 1fr;
-    //gap: 2.1rem;
-
-    //@include breakpoint(pc) {
-        //gap: 3rem;
-    //}
-//}
