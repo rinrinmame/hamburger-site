@@ -33,4 +33,41 @@
         display: flex;
         justify-content: center;
     }
+
+    &__title {
+        height: 100%;
+        width: auto;
+        margin: 10.6rem auto 10.1rem 3.7rem;
+    
+        @include breakpoint(tablet) {
+            display: flex;
+            margin: 10.7rem auto 10.8rem 8.6rem;
+        }
+    
+        @include breakpoint(pc) {
+            margin: 8.3rem auto 8.6rem 8.6rem;
+        }
+    }
+
+    &__discription {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(tablet) {
+            flex-direction: inherit;
+        }
+
+        img {
+            flex: 1;
+        }
+
+        .c-card {
+            flex: 1;
+        }
+    }
 }

@@ -1,0 +1,19 @@
+@use "../../foundation/" as *;
+
+.c-card {
+    background-color: $color--darkbrown;
+    height: 47.1rem;
+    width: 67.7rem;
+
+    &__title {
+        color: $color--white;
+    }
+
+    &__title-sub {
+        color: $color--white;
+    }
+
+    &__text {
+        color: $color--white;
+    }
+}

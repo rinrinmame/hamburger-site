@@ -69,21 +69,6 @@ li {
   height: auto;
   display: inline-block;
 }
-.l-main__contents h2 {
-  font-family: "M PLUS 1p";
-  font-weight: bold;
-  color: #FFFFFF;
-  height: auto;
-  width: auto;
-  font-size: 3.6rem;
-  margin: 12.2rem auto 11.1rem 2.5rem;
-}
-@media (min-width: 1024px) {
-  .l-main__contents h2 {
-    font-size: 4rem;
-    margin: 23.4rem auto 23.7rem 8.6rem;
-  }
-}
 .l-main__access {
   height: auto;
   display: block;
@@ -233,6 +218,33 @@ li {
 }
 .c-inner__footer {
   padding: 4.1rem 0 2.7rem 0;
+}
+.c-inner__archive {
+  padding: 3.2rem 1.8rem 3.2rem 1.8rem;
+}
+@media (min-width: 768px) {
+  .c-inner__archive {
+    padding: 3.9rem 3.5rem 3.2rem 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__archive {
+    padding: 6.3rem 10rem 6.4rem 10rem;
+  }
+}
+.c-inner__discription {
+  padding-bottom: 1.9rem;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .c-inner__discription {
+    padding-bottom: 3.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__discription {
+    padding-bottom: 7rem;
+  }
 }
 
 .c-search-form {
@@ -398,6 +410,28 @@ li {
   background-position: bottom;
   background: rgba(0, 0, 0, 0.5);
 }
+.c-background__cheeseburger {
+  height: 28.5rem;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: left;
+  background-image: url(../../../images/main__takeout.jpg);
+}
+@media (min-width: 1024px) {
+  .c-background__cheeseburger {
+    height: 23.9rem;
+  }
+}
+.c-background__cheeseburger-cover {
+  height: 28.5rem;
+  width: 100%;
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 .c-grid {
   height: 100vh;
@@ -442,6 +476,21 @@ li {
     margin: 6.6rem 6.5rem 6.7rem 6.5rem;
   }
 }
+.c-title__front {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  color: #FFFFFF;
+  height: auto;
+  width: auto;
+  font-size: 3.6rem;
+  margin: 12.2rem auto 11.1rem 2.5rem;
+}
+@media (min-width: 1024px) {
+  .c-title__front {
+    font-size: 4rem;
+    margin: 23.4rem auto 23.7rem 8.6rem;
+  }
+}
 .c-title__menu {
   font-family: "M PLUS 1p";
   font-weight: bold;
@@ -455,6 +504,50 @@ li {
 @media (min-width: 768px) {
   .c-title__menu {
     margin-bottom: 3.2rem;
+  }
+}
+.c-title__burger {
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #FFFFFF;
+  height: auto;
+  width: auto;
+  font-size: 3.6rem;
+}
+@media (min-width: 768px) {
+  .c-title__burger {
+    font-size: 6rem;
+  }
+}
+.c-title__burger-sub {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  color: #FFFFFF;
+  height: auto;
+  width: auto;
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .c-title__burger-sub {
+    margin-top: 4.8rem;
+    margin-left: 1.9rem;
+  }
+}
+.c-title__discription {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  height: auto;
+  width: auto;
+  color: #3C2A10;
+  display: inline-block;
+  position: relative;
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .c-title__discription {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -552,6 +645,41 @@ li {
   display: flex;
   justify-content: center;
 }
+.c-flexbox__title {
+  height: 100%;
+  width: auto;
+  margin: 10.6rem auto 10.1rem 3.7rem;
+}
+@media (min-width: 768px) {
+  .c-flexbox__title {
+    display: flex;
+    margin: 10.7rem auto 10.8rem 8.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-flexbox__title {
+    margin: 8.3rem auto 8.6rem 8.6rem;
+  }
+}
+.c-flexbox__discription {
+  display: flex;
+  flex-direction: column;
+}
+.c-flexbox__card {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .c-flexbox__card {
+    flex-direction: inherit;
+  }
+}
+.c-flexbox__card img {
+  flex: 1;
+}
+.c-flexbox__card .c-card {
+  flex: 1;
+}
 
 .c-list {
   display: flex;
@@ -568,6 +696,32 @@ li {
   font-size: 2rem;
   margin-bottom: 3.1rem;
   padding: 3px;
+}
+
+.c-card {
+  background-color: #3C2B1C;
+  height: 47.1rem;
+  width: 67.7rem;
+}
+.c-card__title {
+  color: #FFFFFF;
+}
+.c-card__title-sub {
+  color: #FFFFFF;
+}
+.c-card__text {
+  color: #FFFFFF;
+}
+
+.c-text__discription {
+  font-family: "M PLUS 1p";
+  font-weight: regular;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 .p-access {
@@ -691,6 +845,15 @@ li {
 @media (min-width: 768px) {
   .p-menu {
     margin-bottom: 4.8rem;
+  }
+}
+
+.p-card__double-cheeseburger {
+  margin: 2.1rem 0;
+}
+@media (min-width: 1024px) {
+  .p-card__double-cheeseburger {
+    margin: 3rem 0;
   }
 }
 

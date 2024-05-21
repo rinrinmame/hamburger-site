@@ -17,3 +17,13 @@
         grid-template-columns: 1fr 20%;
     }
 }
+
+//.c-grid__card {
+    //grid-auto-rows: 1fr 1fr 1fr;
+    //grid-template-columns: 1fr 1fr;
+    //gap: 2.1rem;
+
+    //@include breakpoint(pc) {
+        //gap: 3rem;
+    //}
+//}

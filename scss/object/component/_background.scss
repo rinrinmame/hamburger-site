@@ -71,4 +71,27 @@
         background-position: bottom;
         background: rgba($color: $color--clearblack, $alpha: 0.5);
     }
+
+    &__cheeseburger {
+        height: 28.5rem;
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: left;
+        background-image: url(../../../images/main__takeout.jpg);
+
+        @include breakpoint(pc) {
+            height: 23.9rem;
+        }
+
+        &-cover {
+            height: 28.5rem;
+            width: 100%;
+            display: block;
+            position: absolute;
+            background: rgba($color: $color--clearblack, $alpha: 0.5);
+        }
+    }
 }

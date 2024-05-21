@@ -8,21 +8,6 @@
     &__contents {
         height: auto;
         display: inline-block;
-
-        h2 {
-            font-family: "M PLUS 1p";
-            font-weight: bold;
-            color: $color--white;
-            height: auto;
-            width: auto;
-            font-size: 3.6rem;
-            margin: 12.2rem auto 11.1rem 2.5rem;
-
-            @include breakpoint(pc) {
-                font-size: 4rem;   
-                margin: 23.4rem auto 23.7rem 8.6rem;
-            }
-        }
     }
 
     &__access {
