@@ -72,10 +72,22 @@
         }
     }
 
+    &__figcaption {
+        padding-bottom: 12.3%;
+
+        @include breakpoint(tablet) {
+            padding-bottom: 11.2%;
+        }
+
+        @include breakpoint(pc) {
+            padding-bottom: 12.7%;
+        }
+    }
+
     &__card {
         display: flex;
         flex-direction: column;
-        padding: 9.1% 4.79% 12.3% 4.79%;
+        padding: 9.1% 4.79% 11.2% 4.79%;
 
         @include breakpoint(tablet) {
             padding: 8.7% 15.6% 11.2% 9.1%;
@@ -84,5 +96,14 @@
         @include breakpoint(pc) {
             padding: 11.8% 15.38% 12.7% 9.31%;
         }
+    }
+
+    &__button-area {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

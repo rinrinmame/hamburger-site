@@ -246,10 +246,23 @@ li {
     padding-bottom: 7rem;
   }
 }
+.c-inner__figcaption {
+  padding-bottom: 12.3%;
+}
+@media (min-width: 768px) {
+  .c-inner__figcaption {
+    padding-bottom: 11.2%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__figcaption {
+    padding-bottom: 12.7%;
+  }
+}
 .c-inner__card {
   display: flex;
   flex-direction: column;
-  padding: 9.1% 4.79% 12.3% 4.79%;
+  padding: 9.1% 4.79% 11.2% 4.79%;
 }
 @media (min-width: 768px) {
   .c-inner__card {
@@ -260,6 +273,14 @@ li {
   .c-inner__card {
     padding: 11.8% 15.38% 12.7% 9.31%;
   }
+}
+.c-inner__button-area {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .c-search-form {
@@ -475,7 +496,7 @@ li {
   height: auto;
   width: auto;
   display: grid;
-  grid-template-rows: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
@@ -710,6 +731,17 @@ li {
   display: flex;
   flex-direction: column;
 }
+.c-flexbox__page {
+  display: flex;
+}
+.c-flexbox__page-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-flexbox__page-arrow {
+  display: flex;
+}
 
 .c-list {
   display: flex;
@@ -779,34 +811,45 @@ li {
   flex-direction: column;
   position: relative;
   color: #FFFFFF;
-  margin-bottom: 11.2%;
 }
-@media (min-width: 768px) {
-  .c-card__text {
-    margin-bottom: 12.6%;
-  }
-}
-.c-card__button {
-  height: 4.247rem;
-  width: 16.316rem;
+.c-card__button-area {
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.c-card__button {
+  height: 4.2rem;
+  width: 16.3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   color: #707070;
   background-color: #FFFFFF;
   border-radius: 35px 35px 35px 35px;
-  margin-left: 6.39rem;
-  margin-right: 7.69rem;
-}
-@media (min-width: 768px) {
-  .c-card__button {
-    margin: 8rem;
-    margin-right: 4.08rem;
-  }
 }
 @media (min-width: 1024px) {
   .c-card__button {
-    margin-left: 14.2rem;
-    margin-right: 7.5rem;
+    height: 7.6rem;
+    width: 29.2rem;
+  }
+}
+.c-card__button a {
+  height: 1.7rem;
+  width: 8rem;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: 1.1rem 4.2rem 1.4rem 4.1rem;
+}
+@media (min-width: 1024px) {
+  .c-card__button a {
+    height: 3.3rem;
+    margin: 2.3rem 10.6rem 2rem 10.6rem;
   }
 }
 
@@ -819,6 +862,64 @@ li {
   position: relative;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+.c-page img {
+  height: 1.7rem;
+  width: 0.8rem;
+}
+.c-page__box {
+  display: none;
+}
+@media (min-width: 768px) {
+  .c-page__box {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    border: 1px, solid, #707070;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+}
+.c-page__count {
+  display: none;
+}
+@media (min-width: 768px) {
+  .c-page__count {
+    height: 3.3rem;
+    width: 7.3rem;
+    display: flex;
+    margin-right: 1.93rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.c-page__move-back {
+  font-family: "M PLUS 1p";
+  display: flex;
+  height: 2.4rem;
+  width: 3.2rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+@media (min-width: 768px) {
+  .c-page__move-back {
+    display: none;
+  }
+}
+.c-page__move-next {
+  font-family: "M PLUS 1p";
+  display: flex;
+  height: 2.4rem;
+  width: 3.2rem;
+  font-weight: 400;
+  margin-right: 2rem;
+}
+@media (min-width: 768px) {
+  .c-page__move-next {
+    display: none;
+  }
 }
 
 .p-access {
@@ -950,8 +1051,25 @@ li {
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
   display: flex;
   flex-direction: column;
+}
+
+.p-page {
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #707070;
+  margin: 15rem 2rem 6.4rem 2rem;
+}
+@media (min-width: 768px) {
+  .p-page {
+    justify-content: center;
+  }
 }
 
 .u-button__header {
@@ -983,6 +1101,21 @@ li {
     height: 4rem;
     width: 8.7rem;
     margin: 8.4rem auto 9rem 0;
+  }
+}
+
+.u-page__box {
+  background-color: #3C2B1C;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .u-page__arrow {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .u-page__arrow {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

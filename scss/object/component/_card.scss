@@ -51,32 +51,45 @@
         flex-direction: column;
         position: relative;
         color: $color--white;
-        margin-bottom: 11.2%;
-
-        @include breakpoint(tablet) {
-            margin-bottom: 12.6%;
-        }
     }
 
-    &__button {
-        height: 4.247rem;
-        width: 16.316rem;
+    &__button-area {
+        height: auto;
+        width: auto;
         display: flex;
         flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button {
+        height: 4.2rem;
+        width: 16.3rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
         color: $color--gray;
         background-color: $color--white;
         border-radius: 35px 35px 35px 35px;
-        margin-left: 6.39rem;
-        margin-right: 7.69rem;
-
-        @include breakpoint(tablet) {
-            margin: 8rem;
-            margin-right: 4.08rem;
-        }
 
         @include breakpoint(pc) {
-            margin-left: 14.2rem;
-            margin-right: 7.5rem;
+            height: 7.6rem;
+            width: 29.2rem;
+        }
+
+        a {
+            height: 1.7rem;
+            width: 8rem;
+            font-size: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin: 1.1rem 4.2rem 1.4rem 4.1rem;
+
+            @include breakpoint(pc) {
+                height: 3.3rem;
+                margin: 2.3rem 10.6rem 2rem 10.6rem;
+            }
         }
     }
 }

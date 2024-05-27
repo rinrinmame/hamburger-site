@@ -62,4 +62,18 @@
         display: flex;
         flex-direction: column;
     }
+
+    &__page {
+        display: flex;
+
+        &-count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-arrow {
+            display: flex;
+        }
+    }
 }
