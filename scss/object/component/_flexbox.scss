@@ -11,6 +11,10 @@
             flex-direction: row;
         }
     }
+
+    &__search-form {
+        display: flex;
+    }
     
     &__branch-menu {
         display: flex;

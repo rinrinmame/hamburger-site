@@ -1,7 +1,7 @@
 @use "../../foundation/" as *;
 
 .c-search-form {
-    display: inline-flex;
+    display: flex;
     position: relative;
     height: auto;
     width: auto;
@@ -41,12 +41,20 @@
         border-radius: 10px 10px 10px 10px;
         background-color: $color--white;   
         border: 1px solid $color--gray;
-        padding: 1rem 1rem 1rem 3.3rem;
+        padding: 1rem 1rem 1rem 3.8rem;
+        font-family: "M PLUS 1p";
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: $color--gray;
         
         @include breakpoint(tablet) {
             width: 39.6rem;
-            padding: 1rem 1rem 1rem 3.6rem;
-        }   
+            padding: 1rem 1rem 1rem 4.9rem;
+        }
+
+        @include breakpoint(pc) {
+            padding: 1rem 1rem 1rem 6.1rem;
+        }
     }
 
     &__submit {
