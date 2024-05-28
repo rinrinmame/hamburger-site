@@ -49,14 +49,14 @@
     }
 
     &__archive {
-        padding: 1.38% 5.3% 0 5.3%;
+        padding: 3.2rem 5.3% 0 5.3%;
 
         @include breakpoint(tablet) {
-            padding: 2.48% 5.1% 0 5.1%;
+            padding: 3.9rem 5.1% 0 5.1%;
         }
         
         @include breakpoint(pc) {
-            padding: 3.1% 6.4% 0 3.1%;
+            padding: 6.3rem 6.4% 0 6.4%;
         }
     }
     &__discription {

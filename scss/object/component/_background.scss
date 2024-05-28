@@ -97,4 +97,22 @@
             background: rgba($color: $color--clearblack, $alpha: 0.5);
         }
     }
+
+    &__title-single {
+        height: 22.5rem;
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-position: center;
+        background-image: url(../../../images/main__title-single.jpg);
+
+        @include breakpoint(tablet) {
+            height: 50.5rem;
+        }
+        
+        @include breakpoint(pc) {
+            height: 50rem;
+        }
+    }
 }

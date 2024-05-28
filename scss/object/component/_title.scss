@@ -55,7 +55,7 @@
         }
     }
 
-    &__burger {
+    &__archive {
         font-family: "Roboto";
         font-weight: bold;
         color: $color--white;
@@ -79,6 +79,25 @@
                 margin-top: 4.8rem;
                 margin-left: 1.9rem;
             }
+        }
+    }
+
+    &__single {
+        font-family: "M PLUS 1p";
+        font-weight: bold;
+        color: $color--white;
+        height: auto;
+        width: auto;
+        font-size: 3.6rem;
+        margin: 9.3rem auto 8.9rem 2.6rem;
+
+        @include breakpoint(tablet) {
+            margin: 21.5rem auto 20.1rem 8.6rem;
+            font-size: 6rem;
+        }
+
+        @include breakpoint(pc) {
+            margin: 21.3rem auto 19.8rem 8.6rem;
         }
     }
 
