@@ -70,4 +70,26 @@
             }
         }
     }
+
+    &__img {
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+
+        @include breakpoint(tablet) {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 2rem;
+            column-gap: 1.6rem;
+        }
+
+        @include breakpoint(pc) {
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+    }
 }

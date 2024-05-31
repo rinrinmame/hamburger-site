@@ -646,6 +646,30 @@ li {
     gap: 4rem;
   }
 }
+.c-grid__img {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .c-grid__img {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    -moz-column-gap: 1.6rem;
+         column-gap: 1.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-grid__img {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
 
 .c-title__header {
   font-family: "Roboto";
@@ -904,6 +928,11 @@ li {
 .c-flexbox__blockquote {
   display: flex;
   flex-direction: column;
+}
+.c-flexbox__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .c-list {
@@ -1210,6 +1239,10 @@ li {
   }
 }
 
+.p-list {
+  list-style-type: inherit;
+}
+
 .p-card img {
   height: 100%;
   width: auto;
@@ -1243,7 +1276,7 @@ li {
 
 .p-article--1 img {
   height: auto;
-  width: 100%;
+  width: auto;
   display: flex;
   -o-object-fit: cover;
      object-fit: cover;
