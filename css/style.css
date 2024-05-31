@@ -73,6 +73,9 @@ li {
   height: auto;
   display: block;
 }
+.l-main__section {
+  margin-bottom: 6rem;
+}
 
 .l-sidebar {
   position: fixed;
@@ -282,6 +285,40 @@ li {
   justify-content: center;
   align-items: center;
 }
+.c-inner__single {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3.4rem 5.3% 6.9rem 5.3%;
+}
+@media (min-width: 768px) {
+  .c-inner__single {
+    padding: 6rem 7.1% 14.9rem 7.1%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__single {
+    padding: 6.3rem 6.4% 27.4rem 6.4%;
+  }
+}
+.c-inner__blockquote {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 5.9% 5.7rem 5.9%;
+}
+@media (min-width: 768px) {
+  .c-inner__blockquote {
+    padding: 5rem 7% 5.7rem 7%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__blockquote {
+    padding: 5rem 6.4% 4.7rem 6.4%;
+  }
+}
 
 .c-search-form {
   display: flex;
@@ -372,7 +409,7 @@ li {
   height: 3.6rem;
 }
 
-.c-item {
+.c-item__sidebar {
   font-family: "M PLUS 1p";
   font-weight: regular;
   color: #707070;
@@ -383,9 +420,38 @@ li {
   margin: 4rem auto 2rem 2rem;
 }
 @media (min-width: 768px) {
-  .c-item {
+  .c-item__sidebar {
     margin: 3.2rem auto 2rem 2rem;
   }
+}
+.c-item__group {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  height: auto;
+  width: auto;
+  color: #3C2A10;
+  display: block;
+  position: relative;
+  margin-bottom: 5.7rem;
+}
+.c-item__group h2 {
+  font-size: 2.8rem;
+}
+@media (min-width: 768px) {
+  .c-item__group h2 {
+    font-size: 3.6rem;
+  }
+}
+.c-item__group h3 {
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .c-item__group h3 {
+    font-size: 2.8rem;
+  }
+}
+.c-item__group h4, .c-item__group h5, .c-item__group h6 {
+  font-size: 2rem;
 }
 
 .c-background__branch-menu {
@@ -500,6 +566,14 @@ li {
     height: 50rem;
   }
 }
+.c-background__blockquote {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #F5F5F5;
+}
 
 .c-grid__body {
   height: 100vh;
@@ -536,6 +610,40 @@ li {
 @media (min-width: 1024px) {
   .c-grid__card {
     margin-bottom: 3rem;
+  }
+}
+.c-grid__article--1 {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 43% 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .c-grid__article--1 {
+    gap: 2.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-grid__article--1 {
+    gap: 4rem;
+  }
+}
+.c-grid__article--2 {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 43%;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .c-grid__article--2 {
+    gap: 2.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .c-grid__article--2 {
+    gap: 4rem;
   }
 }
 
@@ -793,6 +901,10 @@ li {
 .c-flexbox__page-arrow {
   display: flex;
 }
+.c-flexbox__blockquote {
+  display: flex;
+  flex-direction: column;
+}
 
 .c-list {
   display: flex;
@@ -904,12 +1016,13 @@ li {
   }
 }
 
-.c-text__discription {
+.c-text {
   font-family: "M PLUS 1p";
   font-weight: 400;
   height: auto;
   width: auto;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -1123,6 +1236,26 @@ li {
   }
 }
 
+.p-blockquote__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-article--1 img {
+  height: auto;
+  width: 100%;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-article--2 img {
+  height: auto;
+  width: auto;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .u-button__header {
   font-size: 2rem;
   height: 2.3rem;
@@ -1159,5 +1292,33 @@ li {
   background-color: #3C2B1C;
   color: #FFFFFF;
   margin-left: 15px;
+}
+
+.u-text__ptag {
+  margin-top: 2.5rem;
+}
+@media (min-width: 768px) {
+  .u-text__ptag {
+    margin-top: 5.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .u-text__ptag {
+    margin-top: 5.7rem;
+  }
+}
+.u-text__blockquote {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.7rem;
+}
+@media (min-width: 768px) {
+  .u-text__blockquote {
+    margin-bottom: 6.1rem;
+  }
+}
+
+.u-item {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -80,4 +80,9 @@
             display: flex;
         }
     }
+
+    &__blockquote {
+        display: flex;
+        flex-direction: column;
+    }
 }

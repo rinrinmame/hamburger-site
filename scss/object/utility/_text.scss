@@ -1,0 +1,26 @@
+@use "../../foundation/" as *;
+
+.u-text{
+
+    &__ptag {
+        margin-top: 2.5rem;
+
+        @include breakpoint(tablet) {
+            margin-top: 5.5rem;
+        }
+
+        @include breakpoint(pc) {
+            margin-top: 5.7rem;
+        }
+    }
+
+    &__blockquote {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.7rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 6.1rem;
+        }
+    }
+}

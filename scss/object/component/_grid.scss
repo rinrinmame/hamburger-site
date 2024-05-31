@@ -36,4 +36,38 @@
             margin-bottom: 3rem;
         }
     }
+
+    &__article {
+
+        &--1 {
+            height: auto;
+            width: auto;
+            display: grid;
+            grid-template-columns: 43% 1fr;
+            gap: 1rem;
+
+            @include breakpoint(tablet) {                gap: 2.1rem;
+            }
+    
+            @include breakpoint(pc) {
+                gap: 4rem;
+            }
+        }
+
+        &--2 {
+            height: auto;
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 43%;
+            gap: 1rem;
+
+            @include breakpoint(tablet) {
+                gap: 2.1rem;
+            }
+    
+            @include breakpoint(pc) {
+                gap: 4rem;
+            }
+        }
+    }
 }

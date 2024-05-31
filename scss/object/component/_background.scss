@@ -115,4 +115,13 @@
             height: 50rem;
         }
     }
+
+    &__blockquote {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: $color--clearcream;
+    }
 }
