@@ -50,7 +50,7 @@
                         <li class="c-item__group"><h3>見出しh3</h3></li>
                         <li class="c-item__group"><h4>見出しh4</h4></li>
                         <li class="c-item__group"><h5>見出しh5</h5></li>
-                        <li class="c-item__group u-item"><h6>見出しh6</h6></li>
+                        <li class="c-item__group u-item__group"><h6>見出しh6</h6></li>
                     </ul>
                 </section>
                 <section class="l-main__section p-blockquote">
@@ -119,26 +119,40 @@
                     </div>
                 </section>
                 <section class="l-main__section p-list">
-                    <ol class="p-list--1">
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                        <ol>
-                            <li>リストリストリスト</li>
-                            <li>リストリストリスト</li>
-                        </ol>
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                    </ol>
-                    <ul class="p-list--2">
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                        <ul>
-                            <li>リストリストリスト</li>
-                            <li>リストリストリスト</li>
-                        </ul>
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                    </ul>
+                    <div class="c-inner__list-area">
+                        <div class="p-list__area--A">
+                            <ol class="p-list__block--1 c-block">
+                                <li class="c-item__list">リストリストリスト</li>
+                                <li class="c-item__list">リストリストリスト</li>
+                                <li class="c-item__list u-item__list">
+                                    <ol class="c-item__sub u-item__sub">
+                                        <li>リスト2リスト2リスト2</li>
+                                        <li>リスト2リスト2リスト2</li>
+                                    </dl>
+                                </ol>
+                            </ol>
+                            <ol class="p-list__block--2 c-block">
+                                <li class="c-item__list">リストリストリスト</li>
+                                <li class="c-item__list">リストリストリスト</li>
+                            </ol>
+                        </div>
+                        <div class="p-list__area--B">
+                            <dl class="p-list__block--3">
+                                <dt class="c-item__list">リストリストリスト</dt>
+                                <dt class="c-item__list">リストリストリスト</dt>
+                                <dt class="c-item__list u-item__list">
+                                    <dl class="c-item__sub">
+                                        <dt>リスト2リスト2リスト2</dt>
+                                        <dd>リスト2リスト2リスト2</dd>
+                                    </dl>
+                                </dt>
+                            </dl>
+                            <ul class="p-list__block--4">
+                                <li class="c-item__list">リストリストリスト</li>
+                                <li class="c-item__list">リストリストリスト</li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
                 <section class="l-main__section p-code">
                     <pre>

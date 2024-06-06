@@ -12,7 +12,7 @@ img {
   border-style: none;
 }
 
-li {
+ul, ol {
   list-style-type: none;
 }
 
@@ -319,6 +319,9 @@ li {
     padding: 5rem 6.4% 4.7rem 6.4%;
   }
 }
+.c-inner__list-area {
+  margin-left: 5rem;
+}
 
 .c-search-form {
   display: flex;
@@ -452,6 +455,11 @@ li {
 }
 .c-item__group h4, .c-item__group h5, .c-item__group h6 {
   font-size: 2rem;
+}
+.c-item__sub {
+  display: flex;
+  flex-direction: column;
+  margin: 1.7rem 0 0 1.8rem;
 }
 
 .c-background__branch-menu {
@@ -1115,6 +1123,10 @@ li {
   }
 }
 
+.c-block {
+  list-style: decimal inside;
+}
+
 .p-access {
   position: relative;
   font-family: "M PLUS 1p";
@@ -1239,10 +1251,6 @@ li {
   }
 }
 
-.p-list {
-  list-style-type: inherit;
-}
-
 .p-card img {
   height: 100%;
   width: auto;
@@ -1287,6 +1295,10 @@ li {
   display: flex;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-list__area--A {
+  margin-bottom: 5.7rem;
 }
 
 .u-button__header {
@@ -1351,7 +1363,15 @@ li {
   }
 }
 
-.u-item {
+.u-item__group {
   margin-bottom: 0;
+}
+.u-item__list {
+  list-style-type: none;
+  padding-left: inherit;
+  margin-bottom: 1.7rem;
+}
+.u-item__sub {
+  list-style-type: decimal;
 }
 /*# sourceMappingURL=style.css.map */
