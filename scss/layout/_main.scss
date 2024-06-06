@@ -16,6 +16,10 @@
     }
 
     &__section {
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 6rem;
+        }
     }
 }

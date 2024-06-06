@@ -124,4 +124,16 @@
         position: relative;
         background-color: $color--clearcream;
     }
+
+    &__code {
+        height: 33.5rem;
+        width: 100%;
+        display: block;
+        position: relative;
+        background: $color--clearcream;
+
+        @include breakpoint(tablet) {
+            height: 23.7rem;
+        }
+    }
 }

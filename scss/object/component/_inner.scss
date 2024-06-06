@@ -139,7 +139,29 @@
         }
     }
 
+    &__img {
+        padding: 0 10.1% 0 10.1%;
+
+        @include breakpoint(tablet) {
+            padding: 0;
+        }
+    }
+
     &__list-area {
-        margin-left: 5rem;
+        @include breakpoint(tablet) {
+            margin-left: 5rem;
+        }
+    }
+
+    &__code {
+        margin: 5rem auto 5rem 0;
+
+        @include breakpoint(tablet) {
+            margin: 5rem a 5rem 0;
+        }
+
+        @include breakpoint(pc) {
+            margin: 5rem auto 5rem 0;
+        }
     }
 }
