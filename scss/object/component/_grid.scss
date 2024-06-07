@@ -78,7 +78,6 @@
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         row-gap: 2rem;
-        place-content: center;
 
         @include breakpoint(tablet) {
             grid-template-rows: 1fr 1fr;

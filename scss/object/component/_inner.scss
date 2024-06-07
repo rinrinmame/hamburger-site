@@ -154,14 +154,19 @@
     }
 
     &__code {
-        margin: 5rem auto 5rem 0;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 5rem;
 
         @include breakpoint(tablet) {
-            margin: 5rem a 5rem 0;
+            margin: 5rem;
         }
 
         @include breakpoint(pc) {
-            margin: 5rem auto 5rem 0;
+            margin: 5rem;
         }
     }
 }

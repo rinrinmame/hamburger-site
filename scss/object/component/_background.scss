@@ -126,14 +126,15 @@
     }
 
     &__code {
-        height: 33.5rem;
+        height: auto;
         width: 100%;
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: relative;
         background: $color--clearcream;
 
         @include breakpoint(tablet) {
-            height: 23.7rem;
+            height: auto;
         }
     }
 }

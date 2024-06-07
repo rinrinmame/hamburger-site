@@ -338,16 +338,21 @@ ul, ol {
   }
 }
 .c-inner__code {
-  margin: 5rem auto 5rem 0;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 5rem;
 }
 @media (min-width: 768px) {
   .c-inner__code {
-    margin: 5rem a 5rem 0;
+    margin: 5rem;
   }
 }
 @media (min-width: 1024px) {
   .c-inner__code {
-    margin: 5rem auto 5rem 0;
+    margin: 5rem;
   }
 }
 
@@ -611,15 +616,16 @@ ul, ol {
   background-color: #F5F5F5;
 }
 .c-background__code {
-  height: 33.5rem;
+  height: auto;
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: #F5F5F5;
 }
 @media (min-width: 768px) {
   .c-background__code {
-    height: 23.7rem;
+    height: auto;
   }
 }
 
@@ -701,7 +707,6 @@ ul, ol {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   row-gap: 2rem;
-  place-content: center;
 }
 @media (min-width: 768px) {
   .c-grid__img {
@@ -1168,6 +1173,34 @@ ul, ol {
   list-style: decimal inside;
 }
 
+.c-code {
+  margin-top: -2.8rem;
+  margin-bottom: -2.8rem;
+}
+
+.c-table {
+  font-family: "M PLUS 1p";
+  font-weight: 400;
+  height: auto;
+  width: 100%;
+  position: relative;
+  table-layout: fixed;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border: solid 1px #707070;
+}
+.c-table__heading {
+  height: auto;
+  width: 42%;
+  font-weight: 400;
+  border: solid 1px #707070;
+}
+.c-table__data {
+  height: auto;
+  width: 58%;
+  border: solid 1px #707070;
+}
+
 .p-access {
   position: relative;
   font-family: "M PLUS 1p";
@@ -1343,7 +1376,17 @@ ul, ol {
 }
 
 .p-code {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   color: #3C2A10;
+}
+
+.p-table__area {
+  height: auto;
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
 }
 
 .u-button__header {

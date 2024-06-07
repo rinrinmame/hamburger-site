@@ -1,0 +1,11 @@
+@use "../../foundation/" as *;
+
+.p-table {
+
+    &__area {
+        height: auto;
+        width: 100%;
+        position: relative;
+        border-collapse: collapse;
+    }
+}
