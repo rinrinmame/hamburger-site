@@ -494,6 +494,9 @@ ul, ol {
   flex-direction: column;
   margin: 1.7rem 0 0 1.8rem;
 }
+.c-item__img {
+  margin-inline: auto;
+}
 
 .c-background__branch-menu {
   background-color: #FFFFFF;
@@ -704,9 +707,10 @@ ul, ol {
   height: auto;
   width: auto;
   display: grid;
+  margin-inline: auto;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  row-gap: 2rem;
+  gap: 2rem;
 }
 @media (min-width: 768px) {
   .c-grid__img {

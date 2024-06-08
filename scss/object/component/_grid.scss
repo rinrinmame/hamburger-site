@@ -46,7 +46,8 @@
             grid-template-columns: 43% 1fr;
             gap: 1rem;
 
-            @include breakpoint(tablet) {                gap: 2.1rem;
+            @include breakpoint(tablet) {
+                gap: 2.1rem;
             }
     
             @include breakpoint(pc) {
@@ -75,9 +76,10 @@
         height: auto;
         width: auto;
         display: grid;
+        margin-inline: auto;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-        row-gap: 2rem;
+        gap: 2rem;
 
         @include breakpoint(tablet) {
             grid-template-rows: 1fr 1fr;
