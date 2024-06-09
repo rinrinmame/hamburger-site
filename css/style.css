@@ -1185,24 +1185,38 @@ ul, ol {
 .c-table {
   font-family: "M PLUS 1p";
   font-weight: 400;
-  height: auto;
+  height: 7.7rem;
   width: 100%;
   position: relative;
   table-layout: fixed;
   font-size: 1.6rem;
-  line-height: 1.5;
   border: solid 1px #707070;
 }
 .c-table__heading {
   height: auto;
   width: 42%;
   font-weight: 400;
+  position: relative;
   border: solid 1px #707070;
+  text-align: left;
+  padding-left: 6.9%;
+}
+@media (min-width: 768px) {
+  .c-table__heading {
+    padding-left: 4%;
+  }
 }
 .c-table__data {
   height: auto;
   width: 58%;
+  position: relative;
   border: solid 1px #707070;
+  padding-left: 6.9%;
+}
+@media (min-width: 768px) {
+  .c-table__data {
+    padding-left: 4%;
+  }
 }
 
 .p-access {
