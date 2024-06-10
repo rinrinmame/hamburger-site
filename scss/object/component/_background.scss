@@ -137,4 +137,44 @@
             height: auto;
         }
     }
+
+    &__button {
+
+        &__area {
+            display: block;
+        }
+
+        &--parent {
+            height: 8.1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: $color--offWhite;
+            border-radius: 20px;
+
+            @include breakpoint(tablet) {
+                height: 10.4rem;
+                width: 42.9rem;
+            }
+        }
+
+        &--child {
+            height: 8.1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: $color--pinkishgray;
+            mix-blend-mode: normal;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            border: 1px solid;
+
+            @include breakpoint(tablet) {
+                height: 10.4rem;
+            }
+        }
+    }
 }

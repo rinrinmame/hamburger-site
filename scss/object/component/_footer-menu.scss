@@ -3,10 +3,33 @@
 .c-footer-menu {
     list-style: none;
     font-family: "M PLUS 1p";
-    font-weight: regular;
+    font-weight: 400;
     height: auto;
     width: auto;
+    display: block;
     font-size: 2rem;
     margin-bottom: 3.1rem;
     padding: 3px;
+    inline-size:fit-content;
+    
+
+    &__information { 
+        display: block;
+        position: relative;
+        inline-size:fit-content;
+        padding-right: 10px;
+        border-right: 2px solid $color--white;
+    }
+
+    &__history {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__small {
+        height: 2.1rem;
+        font-size: 1.4rem;
+    }
 }

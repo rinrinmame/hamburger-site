@@ -128,10 +128,6 @@ ul, ol {
   text-align: center;
   color: #FFFFFF;
 }
-.l-footer small {
-  height: 2.1rem;
-  font-size: 1.4rem;
-}
 
 .c-button__menu {
   font-family: Roboto;
@@ -184,6 +180,27 @@ ul, ol {
 .c-button__hamburger.is-open::after {
   transform: rotate(-45deg);
   top: 20px;
+}
+.c-button__area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.c-button__link {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #3C2A10;
 }
 
 .c-inner__branch-menu {
@@ -631,6 +648,42 @@ ul, ol {
     height: auto;
   }
 }
+.c-background__button__area {
+  display: block;
+}
+.c-background__button--parent {
+  height: 8.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #F2EDE9;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .c-background__button--parent {
+    height: 10.4rem;
+    width: 42.9rem;
+  }
+}
+.c-background__button--child {
+  height: 8.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #DED8D3;
+  mix-blend-mode: normal;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid;
+}
+@media (min-width: 768px) {
+  .c-background__button--child {
+    height: 10.4rem;
+  }
+}
 
 .c-grid__body {
   height: 100vh;
@@ -1002,12 +1055,35 @@ ul, ol {
 .c-footer-menu {
   list-style: none;
   font-family: "M PLUS 1p";
-  font-weight: regular;
+  font-weight: 400;
   height: auto;
   width: auto;
+  display: block;
   font-size: 2rem;
   margin-bottom: 3.1rem;
   padding: 3px;
+  inline-size: -webkit-fit-content;
+  inline-size: -moz-fit-content;
+  inline-size: fit-content;
+}
+.c-footer-menu__information {
+  display: block;
+  position: relative;
+  inline-size: -webkit-fit-content;
+  inline-size: -moz-fit-content;
+  inline-size: fit-content;
+  padding-right: 10px;
+  border-right: 2px solid #FFFFFF;
+}
+.c-footer-menu__history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.c-footer-menu__small {
+  height: 2.1rem;
+  font-size: 1.4rem;
 }
 
 .c-card {
@@ -1343,6 +1419,10 @@ ul, ol {
   }
 }
 
+.p-text {
+  color: #3C2A10;
+}
+
 .p-card img {
   height: 100%;
   width: auto;
@@ -1407,6 +1487,11 @@ ul, ol {
   border-collapse: collapse;
 }
 
+.p-button {
+  display: flex;
+  flex-direction: column;
+}
+
 .u-button__header {
   font-size: 2rem;
   height: 2.3rem;
@@ -1467,6 +1552,12 @@ ul, ol {
   .u-text__blockquote {
     margin-bottom: 6.1rem;
   }
+}
+.u-text__bold {
+  font-weight: bold;
+}
+.u-text__small {
+  font-size: 1.4rem;
 }
 
 .u-item__group {
