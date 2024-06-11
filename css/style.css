@@ -125,8 +125,14 @@ ul, ol {
   grid-row: 3;
   grid-column: 1/3;
   background-color: #9D8670;
-  text-align: center;
   color: #FFFFFF;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .c-button__menu {
@@ -240,9 +246,19 @@ ul, ol {
 }
 .c-inner__menu {
   padding-bottom: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .c-inner__footer {
+  height: 100%;
+  width: 100%;
   padding: 4.1rem 0 2.7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .c-inner__archive {
   padding: 3.2rem 5.3% 0 5.3%;
@@ -994,8 +1010,14 @@ ul, ol {
   }
 }
 .c-flexbox__footer {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 3.1rem;
+  gap: 0.6rem;
+  margin-inline: auto;
 }
 .c-flexbox__title {
   height: 100%;
@@ -1053,15 +1075,13 @@ ul, ol {
 }
 
 .c-footer-menu {
-  list-style: none;
   font-family: "M PLUS 1p";
   font-weight: 400;
   height: auto;
   width: auto;
   display: block;
   font-size: 2rem;
-  margin-bottom: 3.1rem;
-  padding: 3px;
+  list-style: none;
   inline-size: -webkit-fit-content;
   inline-size: -moz-fit-content;
   inline-size: fit-content;
@@ -1069,11 +1089,18 @@ ul, ol {
 .c-footer-menu__information {
   display: block;
   position: relative;
-  inline-size: -webkit-fit-content;
-  inline-size: -moz-fit-content;
-  inline-size: fit-content;
   padding-right: 10px;
-  border-right: 2px solid #FFFFFF;
+}
+.c-footer-menu__information:before {
+  content: "";
+  position: absolute;
+  right: 1px;
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: #FFFFFF;
+  top: 53%;
+  transform: translateY(-50%);
 }
 .c-footer-menu__history {
   display: flex;
@@ -1082,6 +1109,7 @@ ul, ol {
   align-items: center;
 }
 .c-footer-menu__small {
+  display: block;
   height: 2.1rem;
   font-size: 1.4rem;
 }
@@ -1557,6 +1585,10 @@ ul, ol {
   font-weight: bold;
 }
 .u-text__small {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-inline: auto;
   font-size: 1.4rem;
 }
 

@@ -42,10 +42,20 @@
 
     &__menu {
         padding-bottom: 2.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     &__footer {
+        height: 100%;
+        width: 100%;
         padding: 4.1rem 0 2.7rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     &__archive {
