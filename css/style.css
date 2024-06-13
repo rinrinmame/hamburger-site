@@ -249,7 +249,6 @@ ul, ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .c-inner__footer {
   height: 100%;
@@ -1446,7 +1445,7 @@ ul, ol {
 
 .p-menu {
   color: #707070;
-  font-weight: regular;
+  font-weight: 400;
   line-height: normal;
   display: block;
   position: relative;
